@@ -11,7 +11,7 @@
         <a class="page-header__logo" href="#" aria-label="Ссылка на главную страницу">
           <img src="img/pognali-logo-white__no-background.svg" alt="Погнали?">
         </a>
-        <button class="menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <nav class="menu">
         <div class="menu__wrapper">
@@ -20,17 +20,15 @@
             <li class="menu-main-nav__item"><a href="catalog.html">направления</a></li>
             <li class="menu-main-nav__item"><a href="form.html">попутчики</a></li>
           </ul>
+          <a class="menu__authorization-link" href="#">Авторизация</a>
           <ul class="menu-user-nav-links">
             <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item-authorization-link" href="#">Авторизация</a>
-            </li>
-            <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item-phone" href="tel:8-800-555-86-28">
+              <a class="menu-user-nav-links__item--phone" href="tel:8-800-555-86-28">
                 <img class="menu-user-nav-links__item-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
             <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item-mail" href="mailto:mail@htmlacademy.ru">
+              <a class="menu-user-nav-links__item--mail" href="mailto:mail@htmlacademy.ru">
                 <img class="menu-user-nav-links__item-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
               </a>
             </li>
@@ -42,25 +40,25 @@
           </ul>
         </div>
       </nav>
-      <h1 class="main-title">В путешествие с крутыми попутчиками!</h1>
-      <ul class="user-nav">
-        <li class="user-nav-item"><a class="user-nav-item__phone-link" href="tel:8-800-555-86-28"><img src="img/phone-icon.svg" alt="Телефон"></a></li>
-        <li class="user-nav-item"><a class="user-nav-item__mail-link" href="mailto:mail@htmlacademy.ru"><img src="img/mail-icon.svg" alt="Почта"></a></li>
-        <li class="user-nav-item"><a class="user-nav-item__authorization-link" href="#">Авторизация</a></li>
-      </ul>
-      <section class="review">
-        <blockquote class="review__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
-        <cite class="review__cite">Мурат Эльтазин<br> главный редактор газеты «гаджетлайф»</cite>
-      </section>
-      <ol class="steps">
-        <li class="step">Выберете направление</li>
-        <li class="step">Изучите идеи путешественников</li>
-        <li class="step">Находите тех, кто похож на вас</li>
-        <li class="step">Путешествуйте вместе</li>
-      </ol>
-    </div>
   </header>
   <main class="page-main">
+    <h1 class="main-title">В путешествие с крутыми попутчиками!</h1>
+    <ul class="user-nav">
+      <li class="user-nav__item"><a class="user-nav__item--phone-link" href="tel:8-800-555-86-28"><img src="img/phone-icon.svg" alt="Телефон"></a></li>
+      <li class="user-nav__item"><a class="user-nav__item--mail-link" href="mailto:mail@htmlacademy.ru"><img src="img/mail-icon.svg" alt="Почта"></a></li>
+      <li class="user-nav__item"><a class="user-nav__item--authorization-link" href="#">Авторизация</a></li>
+    </ul>
+    <section class="review">
+      <blockquote class="review__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
+      <cite class="review__cite">Мурат Эльтазин<br> главный редактор газеты «гаджетлайф»</cite>
+    </section>
+    <ol class="steps">
+      <li class="steps__item">Выберете направление</li>
+      <li class="steps__item">Изучите идеи путешественников</li>
+      <li class="steps__item">Находите тех, кто похож на вас</li>
+      <li class="steps__item">Путешествуйте вместе</li>
+    </ol>
+    </div>
     <section class="about-service">
       <div class="about-service__wrapper">
         <h2 class="title about-service__title">О сервисе</h2>
@@ -77,24 +75,24 @@
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
         <article class="country-card">
-          <b class="country-card__name thailand">Тайланд</b>
+          <b class="country-card__name country--thailand">Тайланд</b>
           <p class="country-card__text">Джунгли зовут!</p>
           <span class="country-card__people-amount">18321</span>
-          <img src="" alt="">
+          <img class="country-card__img" src="" alt="">
         </article>
         <article class="country-card">
-          <b class="country-card__name france">Франция</b>
+          <b class="country-card__name country--france">Франция</b>
           <p class="country-card__text">Трэ бьен, манифик!</p>
           <span class="country-card__people-amount">12518</span>
-          <img src="" alt="">
+          <img class="country-card__img" src="" alt="">
         </article>
         <article class="country-card">
-          <b class="country-card__name czech">Чехия</b>
+          <b class="country-card__name country--czech">Чехия</b>
           <p class="country-card__text">Закоулки старой Европы</p>
           <span class="country-card__people-amount">5326</span>
-          <img src="" alt="">
+          <img class="country-card__img" src="" alt="">
         </article>
-        <a class="button show-all-ways" href="form.html">Показать все</a>
+        <a class="button ways-preview__show-all-ways" href="form.html">Показать все</a>
       </div>
     </section>
     <section class="preview-companions">
@@ -104,13 +102,13 @@
         <b class="preview-companions__comment">Теперь можно легко найти единомышленников!</b>
       </div>
       <article class="preview-companion-profile">
-        <img src="" alt="">
-        <ul class="preview-countries-want-to-visit">
-          <li class="preview-country-want-to-visit sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
-          <li class="preview-country-want-to-visit thailand"><span class="visually-hidden">Тайланд</span></li>
-          <li class="preview-country-want-to-visit seychelles"><span class="visually-hidden">Сейшелы</span></li>
+        <img class="preview-companion-profile__img" src="" alt="">
+        <ul class="preview-companion-profile__preview-countries-want-to-visit">
+          <li class="preview-countries-want-to-visit__country country--sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
+          <li class="preview-countries-want-to-visit__country country--thailand"><span class="visually-hidden">Тайланд</span></li>
+          <li class="preview-countries-want-to-visit__country country--seychelles"><span class="visually-hidden">Сейшелы</span></li>
         </ul>
-        <p class="preview-companion-name preview-companion-name--offline">Таня Фирсова</p>
+        <p class="preview-companion-profile__preview-companion-name preview-companion-name--offline">Таня Фирсова</p>
         <ul class="preview-companion-tags">
           <li class="preview-companion-tags__item">#ЗОЖ</li>
           <li class="preview-companion-tags__item">#ПП</li>
@@ -119,35 +117,35 @@
           <li class="preview-companion-tags__item">#авокадо</li>
           <li class="preview-companion-tags__item">#смузи</li>
         </ul>
-        <ul class="preview-vehicles">
+        <ul class="preview-companion-profile__preview-vehicles">
           <li class="preview-vehicles__item"><span class="visually-hidden">На самолете</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На машине</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На велосипеде</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">Пешком</span></li>
         </ul>
       </article>
-      <article class="companions-preview-profile">
-        <img src="" alt="">
-        <ul class="preview-countries-want-to-visit">
-          <li class="preview-country-want-to-visit belgium"><span class="visually-hidden">Бельгия</span></li>
-          <li class="preview-country-want-to-visit czech"><span class="visually-hidden">Чехия</span></li>
+      <article class="preview-companion-profile">
+        <img class="preview-companion-profile__img" src="" alt="">
+        <ul class="preview-companion-profile__preview-countries-want-to-visit">
+          <li class="preview-countries-want-to-visit__country country--belgium"><span class="visually-hidden">Бельгия</span></li>
+          <li class="preview-countries-want-to-visit__country country--czech"><span class="visually-hidden">Чехия</span></li>
         </ul>
-        <p class="preview-companion-name preview-companion-name--online">Петя Демин</p>
-        <ul class="preview-companion-tags">
+        <p class="preview-companion-profile__preview-companion-name preview-companion-name--online">Петя Демин</p>
+        <ul class="preview-companion-profile__preview-companion-tags">
           <li class="preview-companion-tags__item">#бургер</li>
           <li class="preview-companion-tags__item">#бар</li>
           <li class="preview-companion-tags__item">#футбол</li>
           <li class="preview-companion-tags__item">#концерт</li>
           <li class="preview-companion-tags__item">#крафт</li>
         </ul>
-        <ul class="preview-vehicles">
+        <ul class="preview-companion-profile__preview-vehicles">
           <li class="preview-vehicles__item"><span class="visually-hidden">На самолете</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На машине</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На велосипеде</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">Пешком</span></li>
         </ul>
       </article>
-      <a class="button show-all-companions" href="catalog.html">Показать всех</a>
+      <a class="button preview-companions__show-all-companions" href="catalog.html">Показать всех</a>
     </section>
     <section class="add-your-profile">
       <div class="add-your-profile__wrapper">
@@ -166,7 +164,7 @@
             <dd class="add-your-profile__price-list-item-price">59 руб./мес</dd>
           </div>
         </dl>
-        <button class="button show-business-rates" type="button">Показать тарифы для бизнеса</button>
+        <button class="button add-your-profile__show-business-rates" type="button">Показать тарифы для бизнеса</button>
         <section class="business-rates">
           <h2 class="title business-rates__title">Бизнес тарифы</h2>
           <dl class="business-rates__price-list">
@@ -183,7 +181,7 @@
               <dd class="business-rates__price-list-item-price">Индивидуально</dd>
             </div>
           </dl>
-          <button class="button close" type="button">Закрыть окно</button>
+          <button class="business-rates__close" type="button">Закрыть окно</button>
         </section>
       </div>
     </section>
@@ -191,24 +189,24 @@
       <div class="feedback__wrapper">
         <h2 class="title feedback__title">Заинтересовались?</h2>
         <div class="feedback__log-in">
-          <p class="feedback__log-in-text">Зарегистрируйтесь, это быстро и бесплатно!Уже зарегистрированы? Тогда скорее<a href="#">авторизуйтесь</a>.</p>
+          <p class="feedback__log-in-text">Зарегистрируйтесь, это быстро и бесплатно!Уже зарегистрированы? Тогда скорее <a href="#">авторизуйтесь</a>.</p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="email" class="visually-hidden">Введите ваш email</label>
-            <input type="email" name="email" id="email" placeholder="E-mail" required>
-            <button class="feedback__log-in-button" type="submit">Регистрация</button>
+            <input class="feedback__log-in-input" type="email" name="email" id="email" placeholder="E-mail" required>
+            <button class="button feedback__log-in-button" type="submit">Регистрация</button>
           </form>
         </div>
         <div class="feedback__contacts">
           <p class="feedback__contacts-text">Остались вопросы? Мы с радостью на них ответим!</p>
-          <ul class="user-nav-links">
-            <li class="user-nav-links__item">
-              <a class="user-nav-links__item-phone" href="tel:8-800-555-86-28">
-                <img class="user-nav-links__item-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
+          <ul class="menu-user-nav-links--feedback">
+            <li class="menu-user-nav-links__item">
+              <a class="menu-user-nav-links__item--phone" href="tel:8-800-555-86-28">
+                <img class="menu-user-nav-links__item-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
-            <li class="user-nav-links__item">
-              <a class="user-nav-links__item-mail" href="mailto:mail@htmlacademy.ru">
-                <img class="user-nav-links__item-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
+            <li class="menu-user-nav-links__item">
+              <a class="menu-user-nav-links__item--mail" href="mailto:mail@htmlacademy.ru">
+                <img class="menu-user-nav-links__item-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
               </a>
             </li>
           </ul>
@@ -218,8 +216,10 @@
     <section class="location">
       <div class="location__wrapper">
         <div class="location__address">
-          <img src="img/location-icon.svg">ул. Большая Конюшенная, 19/8</div>
-        <a class="button get-directions" href="#">Проложить маршрут</a>
+          <img class="location__address-icon" src="img/location-icon.svg" alt="Адрес">
+          ул. Большая Конюшенная, 19/8
+        </div>
+        <a class="button location__get-directions" href="#">Проложить маршрут</a>
       </div>
     </section>
     <!-- Место для карты! -->
@@ -235,7 +235,7 @@
         <li class="page-footer__social-item"><a href="#"><img src="img/instagram-icon.svg" alt="Инстаграм"></a></li>
       </ul>
       <a class="logo-copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <p class="logo-copyright__text">Разработано</p><img src="img/htmlacademy-logo.svg" alt="HTML Академиия">
+        <span class="logo-copyright__text">Разработано</span><img src="img/htmlacademy-logo.svg" alt="HTML Академиия">
       </a>
     </div>
   </footer>
