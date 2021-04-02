@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
   <title>Погнали</title>
@@ -7,14 +7,14 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="page-header__nav scroll">
-        <a class="page-header__logo" href="#" aria-label="Ссылка на главную страницу">
-          <img src="img/pognali-logo-white__no-background.svg" alt="Погнали?">
-        </a>
-        <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </nav>
       <nav class="menu">
         <div class="menu__wrapper">
+          <nav class="page-header__nav scroll">
+            <a class="page-header__logo" href="#" aria-label="Ссылка на главную страницу">
+              <img src="img/pognali-logo-white__no-background.svg" alt="Погнали?">
+            </a>
+            <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          </nav>
           <ul class="menu-main-nav">
             <li class="menu-main-nav__item"><a href="#">о сервисе</a></li>
             <li class="menu-main-nav__item"><a href="catalog.html">направления</a></li>
@@ -23,13 +23,13 @@
           <a class="menu__authorization-link" href="#">Авторизация</a>
           <ul class="menu-user-nav-links">
             <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item--phone" href="tel:8-800-555-86-28">
-                <img class="menu-user-nav-links__item-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
+              <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--phone" href="tel:8-800-555-86-28">
+                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
             <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item--mail" href="mailto:mail@htmlacademy.ru">
-                <img class="menu-user-nav-links__item-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
+              <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--mail" href="mailto:mail@htmlacademy.ru">
+                <img class="menu-user-nav-links__item-link-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
               </a>
             </li>
           </ul>
@@ -44,9 +44,9 @@
   <main class="page-main">
     <h1 class="main-title">В путешествие с крутыми попутчиками!</h1>
     <ul class="user-nav">
-      <li class="user-nav__item"><a class="user-nav__item--phone-link" href="tel:8-800-555-86-28"><img src="img/phone-icon.svg" alt="Телефон"></a></li>
-      <li class="user-nav__item"><a class="user-nav__item--mail-link" href="mailto:mail@htmlacademy.ru"><img src="img/mail-icon.svg" alt="Почта"></a></li>
-      <li class="user-nav__item"><a class="user-nav__item--authorization-link" href="#">Авторизация</a></li>
+      <li class="user-nav__item"><a class="user-nav__item-link user-nav__item-link--phone" href="tel:8-800-555-86-28"><img src="img/phone-icon.svg" alt="Телефон"></a></li>
+      <li class="user-nav__item"><a class="user-nav__item-link user-nav__item-link--mail" href="mailto:mail@htmlacademy.ru"><img src="img/mail-icon.svg" alt="Почта"></a></li>
+      <li class="user-nav__item"><a class="user-nav__item-link user-nav__item-link--authorization" href="#">Авторизация</a></li>
     </ul>
     <section class="review">
       <blockquote class="review__blockquote">«Лучшее приложение, что я видел в жизни!»</blockquote>
@@ -75,19 +75,19 @@
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
         <article class="country-card">
-          <b class="country-card__name country--thailand">Тайланд</b>
+          <b class="country-card__name country country--thailand">Тайланд</b>
           <p class="country-card__text">Джунгли зовут!</p>
           <span class="country-card__people-amount">18321</span>
           <img class="country-card__img" src="" alt="">
         </article>
         <article class="country-card">
-          <b class="country-card__name country--france">Франция</b>
+          <b class="country-card__name country country--france">Франция</b>
           <p class="country-card__text">Трэ бьен, манифик!</p>
           <span class="country-card__people-amount">12518</span>
           <img class="country-card__img" src="" alt="">
         </article>
         <article class="country-card">
-          <b class="country-card__name country--czech">Чехия</b>
+          <b class="country-card__name country country--czech">Чехия</b>
           <p class="country-card__text">Закоулки старой Европы</p>
           <span class="country-card__people-amount">5326</span>
           <img class="country-card__img" src="" alt="">
@@ -103,12 +103,12 @@
       </div>
       <article class="preview-companion-profile">
         <img class="preview-companion-profile__img" src="" alt="">
-        <ul class="preview-companion-profile__preview-countries-want-to-visit">
-          <li class="preview-countries-want-to-visit__country country--sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
-          <li class="preview-countries-want-to-visit__country country--thailand"><span class="visually-hidden">Тайланд</span></li>
-          <li class="preview-countries-want-to-visit__country country--seychelles"><span class="visually-hidden">Сейшелы</span></li>
+        <ul class="preview-countries-want-to-visit">
+          <li class="preview-countries-want-to-visit__country country country--sri-lanka"><span class="visually-hidden">Шри-Ланка</span></li>
+          <li class="preview-countries-want-to-visit__country country country--thailand"><span class="visually-hidden">Тайланд</span></li>
+          <li class="preview-countries-want-to-visit__country country country--seychelles"><span class="visually-hidden">Сейшелы</span></li>
         </ul>
-        <p class="preview-companion-profile__preview-companion-name preview-companion-name--offline">Таня Фирсова</p>
+        <p class="preview-companion-profile__preview-companion-name preview-companion-profile__preview-companion-name--offline">Таня Фирсова</p>
         <ul class="preview-companion-tags">
           <li class="preview-companion-tags__item">#ЗОЖ</li>
           <li class="preview-companion-tags__item">#ПП</li>
@@ -117,7 +117,7 @@
           <li class="preview-companion-tags__item">#авокадо</li>
           <li class="preview-companion-tags__item">#смузи</li>
         </ul>
-        <ul class="preview-companion-profile__preview-vehicles">
+        <ul class="preview-vehicles">
           <li class="preview-vehicles__item"><span class="visually-hidden">На самолете</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На машине</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На велосипеде</span></li>
@@ -126,19 +126,19 @@
       </article>
       <article class="preview-companion-profile">
         <img class="preview-companion-profile__img" src="" alt="">
-        <ul class="preview-companion-profile__preview-countries-want-to-visit">
-          <li class="preview-countries-want-to-visit__country country--belgium"><span class="visually-hidden">Бельгия</span></li>
-          <li class="preview-countries-want-to-visit__country country--czech"><span class="visually-hidden">Чехия</span></li>
+        <ul class="preview-countries-want-to-visit">
+          <li class="preview-countries-want-to-visit__country country country--belgium"><span class="visually-hidden">Бельгия</span></li>
+          <li class="preview-countries-want-to-visit__country country country--czech"><span class="visually-hidden">Чехия</span></li>
         </ul>
-        <p class="preview-companion-profile__preview-companion-name preview-companion-name--online">Петя Демин</p>
-        <ul class="preview-companion-profile__preview-companion-tags">
+        <p class="preview-companion-profile__preview-companion-name preview-companion-profile__preview-companion-name--online">Петя Демин</p>
+        <ul class="preview-companion-tags">
           <li class="preview-companion-tags__item">#бургер</li>
           <li class="preview-companion-tags__item">#бар</li>
           <li class="preview-companion-tags__item">#футбол</li>
           <li class="preview-companion-tags__item">#концерт</li>
           <li class="preview-companion-tags__item">#крафт</li>
         </ul>
-        <ul class="preview-companion-profile__preview-vehicles">
+        <ul class="preview-vehicles">
           <li class="preview-vehicles__item"><span class="visually-hidden">На самолете</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На машине</span></li>
           <li class="preview-vehicles__item"><span class="visually-hidden">На велосипеде</span></li>
@@ -198,15 +198,15 @@
         </div>
         <div class="feedback__contacts">
           <p class="feedback__contacts-text">Остались вопросы? Мы с радостью на них ответим!</p>
-          <ul class="menu-user-nav-links--feedback">
+          <ul class="menu-user-nav-links menu-user-nav-links--feedback">
             <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item--phone" href="tel:8-800-555-86-28">
-                <img class="menu-user-nav-links__item-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
+              <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--phone" href="tel:8-800-555-86-28">
+                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
             <li class="menu-user-nav-links__item">
-              <a class="menu-user-nav-links__item--mail" href="mailto:mail@htmlacademy.ru">
-                <img class="menu-user-nav-links__item-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
+              <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--mail" href="mailto:mail@htmlacademy.ru">
+                <img class="menu-user-nav-links__item-link-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
               </a>
             </li>
           </ul>
