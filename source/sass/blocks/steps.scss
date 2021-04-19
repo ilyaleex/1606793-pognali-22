@@ -1,0 +1,27 @@
+
+.steps__item {
+ color: $basic_blue;
+ font-family: "bloggersans-bold";
+ font-size: 18px;
+ line-height: 18px;
+}
+
+
+.steps__item:nth-child(1) {
+  background: $special_orange;
+}
+
+
+.steps__item:nth-child(2) {
+  background: $special_orange_light;
+}
+
+
+.steps__item:nth-child(3) {
+  background: $special_yellow_dark;
+}
+
+
+.steps__item:nth-child(4) {
+  background: $basic_yellow;
+}
