@@ -1,0 +1,36 @@
+
+.preview-companions {
+  position: relative;
+  background: $basic_blue;
+  border-radius: 0 0 30px 30px;
+  margin-top: -75px;
+  z-index: 4;
+}
+
+
+.preview-companions__wrapper {
+  padding: 120px 25px 53px;
+}
+
+
+.preview-companions__title {
+  padding-left: 25px;
+}
+
+
+.preview-companions__description {
+  color: #ffffff;
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+}
+
+
+.preview-companions__comment {
+  color: #ffffff;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+}

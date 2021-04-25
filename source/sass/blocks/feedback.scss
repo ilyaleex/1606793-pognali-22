@@ -1,0 +1,97 @@
+
+.feedback {
+  position: relative;
+  background: $basic_blue;
+  border-radius: 0 0 30px 30px;
+  margin-top: -75px;
+  z-index: 2;
+}
+
+
+.feedback__wrapper {
+  padding: 105px 25px 41px;
+}
+
+
+.feedback__title {
+  text-align: center;
+}
+
+
+.feedback__log-in-text {
+  color: #ffffff;
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+
+.feedback__authorization-link {
+  color: $basic_yellow;
+  position: relative;
+  border-bottom: 1px solid;
+
+  &:hover {
+    color: $special_orange;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.feedback__log-in-label {
+  position: relative;
+}
+
+
+.feedback__form {
+  margin: 30px 0;
+}
+
+
+.feedback__log-in-button {
+  position: absolute;
+  right: 0;
+  height: 62px;
+  width: 60px;
+  cursor: pointer;
+}
+
+
+.feedback__log-in-input {
+  box-sizing: border-box;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 24px;
+  width: 100%;
+  height: 58px;
+  border-radius: 10px 10px 10px 10px;
+  border: 4px solid #ffffff;
+  padding: 27px 60px 27px 25px;
+
+  &:focus {
+    color: #ffffff;
+    background: transparent;
+  }
+}
+
+
+.feedback__log-in-input::placeholder {
+  color: $special_grey;
+  opacity: 0.3;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+
+.feedback__contacts-text {
+  color: #ffffff;
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  margin-bottom: 30px;
+}

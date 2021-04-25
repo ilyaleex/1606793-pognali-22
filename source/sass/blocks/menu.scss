@@ -1,7 +1,11 @@
 
-.menu__authorization-link {
-  color: $basic_blue;
-  background: $basic_yellow;
-  font-family: "bloggersans-bold";
-  font-size: 17px;
+.menu__socials {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.menu__social-item:not(:last-child) {
+  margin-right: 26px;
 }

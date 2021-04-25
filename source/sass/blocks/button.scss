@@ -1,0 +1,36 @@
+
+.button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  color: $brighter_blue;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 18px;
+  background: $basic_yellow;
+  border-radius: 10px;
+  padding: 22px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 26px;
+    right: 16px;
+    border-top: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 10px solid $brighter_blue;
+  }
+
+  &:hover {
+    background: $special_yellow_dark;
+  }
+
+  &:active {
+    color: $basic_blue_light_active;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+}

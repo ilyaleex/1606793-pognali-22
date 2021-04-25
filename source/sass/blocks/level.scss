@@ -1,0 +1,38 @@
+
+.level {
+  background: $level_background;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: 9px;
+  text-align: center;
+  vertical-align: center;
+}
+
+
+.level__number {
+  font-family: "bloggersans__bold", "Arial", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+.level__text {
+  position: relative;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 14px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    top: -2px;
+    left: 15px;
+    background: #ffffff;
+    opacity: 0.3;
+  }
+}

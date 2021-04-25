@@ -1,16 +1,19 @@
 
 .review__blockquote {
- color: #fff;
- font-family: "bloggersans";
- font-size: 16px;
- line-height: 22px;
+  color: #ffffff;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding-left: 25px;
 }
 
 
 .review__cite {
- color: #fff;
- font-style: normal;
- font-family: "bloggersans-bold";
- font-size: 16px;
- line-height: 22px;
+  color: #ffffff;
+  font-style: normal;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
 }

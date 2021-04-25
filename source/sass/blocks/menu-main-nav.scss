@@ -1,11 +1,14 @@
 
 .menu-main-nav {
   text-align: center;
+  margin: 0 0 51px;
+  padding: 0;
 }
+
 
 .menu-main-nav__item a {
   color: $dark_blue;
-  font-family: "bloggersans-medium";
+  font-family: "bloggersans-medium", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 30px;
   line-height: 35px;

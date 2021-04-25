@@ -1,0 +1,86 @@
+
+.business-rates {
+  display: none;
+  background: #ffffff;
+  border-radius: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 455px;
+  z-index: 999;
+  margin: auto;
+  width: 270px;
+}
+
+
+.business-rates__wrapper {
+  padding: 34px 25px 0;
+}
+
+
+.business-rates__title {
+  text-align: center;
+  margin: 0 0 28px 0;
+}
+
+
+.business-rates__price-list {
+  padding: 0;
+  margin: 0 0 34px 0;
+}
+
+
+.business-rates__price-list-item {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  }
+}
+
+
+.business-rates__price-list-item-description {
+  margin: 11px 0 0 0;
+}
+
+
+.business-rates__price-list-item-price {
+  margin: 0;
+
+  &:last-child {
+    margin-bottom: 11px;
+  }
+}
+
+
+.business-rates__price-list-item-description,
+.business-rates__price-list-item-price {
+  color: $special_grey;
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+
+.business-rates__close {
+  border: none;
+  background: $basic_blue_light;
+  color: $brighter_blue;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  padding: 21px 0;
+
+  &:active {
+    color: $basic_blue_light_active;
+    opacity: 0.3;
+  }
+}

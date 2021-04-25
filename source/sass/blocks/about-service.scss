@@ -1,15 +1,36 @@
 
+.about-service {
+  position: relative;
+  border-radius: 0 0 30px 30px;
+  background: $basic_blue;
+  z-index: 6;
+  margin-top: -20px;
+}
+
+
+.about-service__wrapper {
+  padding: 33px 25px 82px;
+}
+
+
+.about-service__title {
+  padding-left: 25px;
+}
+
+
 .about-service__description {
- color: #fff;
- font-family: "bloggersans";
- font-size: 16px;
- line-height: 22px;
+  color: #ffffff;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
 }
 
 
 .about-service__comment {
- font-family: "bloggersans-bold";
- color: #fff;
- font-size: 16px;
- line-height: 22px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
 }
