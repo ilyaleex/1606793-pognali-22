@@ -19,7 +19,7 @@
 
 
 .feedback__log-in-text {
-  color: #ffffff;
+  color: $white;
   font-family: "bloggersans-light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -68,11 +68,11 @@
   width: 100%;
   height: 58px;
   border-radius: 10px 10px 10px 10px;
-  border: 4px solid #ffffff;
+  border: 4px solid $white;
   padding: 27px 60px 27px 25px;
 
   &:focus {
-    color: #ffffff;
+    color: $white;
     background: transparent;
   }
 }
@@ -87,7 +87,7 @@
 
 
 .feedback__contacts-text {
-  color: #ffffff;
+  color: $white;
   font-family: "bloggersans-light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;

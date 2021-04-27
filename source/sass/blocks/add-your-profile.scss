@@ -15,47 +15,47 @@
 
 
 .add-your-profile__price-list {
+  position: relative;
   list-style: none;
   padding: 0;
-}
-
-
-.add-your-profile__price-list-number {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  right: -47px;
-  color: #ffffff;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  font-family: "bloggersans", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-
-  &--first {
-    background: $special_orange;
-  }
-
-  &--second {
-    background: $special_orange_light;
-  }
-
-  &--third {
-    background: $basic_yellow;
-  }
+  counter-reset: rate;
 }
 
 
 .add-your-profile__price-list-item {
   position: relative;
+  counter-increment: rate;
   width: 200px;
   margin: 19px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.03);
+  border-top: 1px solid $border-color;
 
-  &:last-child {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+  &::after {
+    display: flex;
+    content: counter(rate);
+    position: absolute;
+    color: $white;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    font-family: "bloggersans", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    right: -45px;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:nth-child(1)::after {
+    background: $special_orange;
+  }
+
+  &:nth-child(2)::after {
+    background: $special_orange_light;
+  }
+
+  &:nth-child(3)::after {
+    background: $basic_yellow;
   }
 }
 

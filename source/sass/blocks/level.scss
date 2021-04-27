@@ -1,7 +1,6 @@
 
 .level {
-  background: $level_background;
-  color: #ffffff;
+  color: $basic_blue;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -12,10 +11,15 @@
 
 
 .level__number {
-  font-family: "bloggersans__bold", "Arial", sans-serif;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   font-size: 24px;
   margin: 0;
   padding-top: 10px;
+
+  &--user {
+    padding: 15px 0 2px 0;
+    font-size: 38px;
+  }
 }
 
 
@@ -25,6 +29,11 @@
   font-size: 14px;
   margin: 0;
 
+  &--user {
+    padding-top: 2px;
+    font-size: 18px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -32,7 +41,17 @@
     height: 1px;
     top: -2px;
     left: 15px;
-    background: #ffffff;
+    background: $special_grey;
     opacity: 0.3;
+  }
+
+  &--line::before {
+    background: $white;
+    opacity: 0.3;
+  }
+
+  &--user::before {
+    width: 51px;
+    left: 25px;
   }
 }

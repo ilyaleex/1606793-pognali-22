@@ -22,7 +22,7 @@
   &::after {
     position: absolute;
     content: counter(step);
-    color: #ffffff;
+    color: $white;
     right: 21px;
     top: 22px;
   }

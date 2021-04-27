@@ -19,7 +19,7 @@
 
 
 .preview-companions__description {
-  color: #ffffff;
+  color: $white;
   font-family: "bloggersans-light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -28,9 +28,20 @@
 
 
 .preview-companions__comment {
-  color: #ffffff;
+  color: $white;
   font-family: "bloggersans-bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   padding-left: 25px;
+}
+
+
+.preview-companion-profile__preview-companion-level {
+  background: $level_background;
+  color: $white;
+
+  &::before {
+    background: $white;
+    opacity: 0.3;
+  }
 }
