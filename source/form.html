@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <title>Направления - Погнали</title>
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
+      <h1 class="main-title main-title--current-page">Направления</h1>
       <nav class="menu">
         <div class="menu__wrapper">
           <div class="page-header__nav scroll">
@@ -21,14 +25,16 @@
             <li class="menu-main-nav__item"><a href="catalog.html">направления</a></li>
             <li class="menu-main-nav__item"><a href="form.html">попутчики</a></li>
           </ul>
-          <a class="menu__authorization-link" href="#">Авторизация</a>
           <ul class="menu-user-nav-links">
-            <li class="menu-user-nav-links__item">
+            <li class="menu-user-nav-links__item menu-user-nav-links__item--authorization">
+              <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--authorization" href="#">Авторизация</a>
+            </li>
+            <li class="menu-user-nav-links__item menu-user-nav-links__item--phone">
               <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--phone" href="tel:8-800-555-86-28">
-                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
+                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
-            <li class="menu-user-nav-links__item">
+            <li class="menu-user-nav-links__item menu-user-nav-links__item--mail">
               <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--mail" href="mailto:mail@htmlacademy.ru">
                 <img class="menu-user-nav-links__item-link-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
               </a>
@@ -44,14 +50,13 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="main-title main-title--current-page">Направления</h1>
     <section class="user-profile">
       <div class="user-profile__wrapper">
         <form method="post" action="https://echo.htmlacademy.ru">
           <h2 class="visually-hidden">Мой Профиль</h2>
           <div class="user-profile__user-level level">
-            <p class="level__number">99</p>
-            <p class="level__text">level</p>
+            <p class="level__number level__number--user">99</p>
+            <p class="level__text level__text--user">level</p>
           </div>
           <img class="user-profile__user-photo">
           <button class="user-profile__change-photo" type="button">Сменить фото</button>
@@ -93,7 +98,7 @@
     </section>
     <section class="user-plans">
       <div class="user-plans__wrapper">
-        <h2 class="user-plans__title">Мои планы:</h2>
+        <h2 class="user-plans__title form-title">Мои планы:</h2>
         <ol class="user-plans__list">
           <li class="user-plans-list-item">
             <p class="user-plans-list-item__countries">Франция, Италия</p>
@@ -112,7 +117,7 @@
     </section>
     <section class="add-plan">
       <div class="add-plan__wrapper">
-        <h2 class="add-plan__title">Добавить план:</h2>
+        <h2 class="add-plan__title form-title">Добавить план:</h2>
         <form method="post" action="https://echo.htmlacademy.ru">
           <div class="step-status">
             <p class="step-status__item step-status__item--current">
@@ -127,7 +132,7 @@
           </div>
           <article class="add-plan__step">
             <div class="add-plan__step-wrapper">
-              <h3 class="add-plan__step-title"><span class="add-plan__step-number">Шаг 1. </span>Даты пребывания</h3>
+              <h3 class="add-plan__step-title form-title"><span class="add-plan__step-number">Шаг 1. </span>Даты пребывания</h3>
               <p class="add-plan__step-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
               <div class="add-plan__parameter">
                 <label class="add-plan__parameter-name" for="companions">Ищу попутчиков:<span class="add-plan__parameter-measure">чел.</span></label>
@@ -203,12 +208,12 @@
                   <li><button class="calendar__day" type="button">5</button></li>
                 </ul>
               </div>
-              <a class="button add-plan__next-step">Следующий шаг</a>
+              <a class="button button--round add-plan__next-step">Следующий шаг</a>
             </div>
           </article>
           <article class="add-plan__step">
             <div class="add-plan__step-wrapper">
-              <h3 class="add-plan__step-title"><span class="add-plan__step-number">Шаг 2. </span>Маршрут</h3>
+              <h3 class="add-plan__step-title form-title"><span class="add-plan__step-number">Шаг 2. </span>Маршрут</h3>
               <p class="add-plan__step-description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               <ul class="add-plan__countries-selection countries-selection">
                 <li class="countries-selection__dropdown-country-list dropdown-country-list">
@@ -272,13 +277,13 @@
                   <button class="dropdown-country-list__add-country" type="button"><span class="visually-hidden">Добавить страну</span></button>
                 </li>
               </ul>
-              <a class="button add-plan__next-step">Следующий шаг</a>
+              <a class="button button--round add-plan__next-step">Следующий шаг</a>
               <a class="add-plan__previous-step">На шаг назад</a>
             </div>
           </article>
           <article class="add-plan__step">
             <div class="add-plan__step-wrapper">
-              <h3 class="add-plan__step-title"><span class="add-plan__step-number">Шаг 3. </span>Развлечения</h3>
+              <h3 class="add-plan__step-title form-title"><span class="add-plan__step-number">Шаг 3. </span>Развлечения</h3>
               <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <ul class="add-plan__chosen-countries chosen-countries">
                 <li class="chosen-countries__country-flag country country--bosnia-and-herzegovina">
@@ -292,7 +297,7 @@
               </ul>
             </div>
           </article>
-          <button class="button add-plan__submit" type="submit">Отправить</button>
+          <button class="button button--round add-plan__submit" type="submit">Отправить</button>
           <a class="add-plan__previous-step">На шаг назад</a>
         </form>
       </div>
@@ -314,4 +319,5 @@
     </div>
   </footer>
 </body>
+
 </html>

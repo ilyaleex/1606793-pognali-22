@@ -1,4 +1,10 @@
 
+.page-header {
+  position: relative;
+  background: $blue_header;
+  border-radius: 0 0 30px 30px;
+}
+
 .page-header__wrapper {
-  padding: 22px 24px 38px;
+  padding: 25px 27px 7px 25px;
 }

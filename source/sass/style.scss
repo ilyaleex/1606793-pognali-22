@@ -1,7 +1,10 @@
-/*Global*/
 
-@import "global/global.scss";
+/*Fonts*/
+
 @import "global/fonts.scss";
+
+/*Colors*/
+
 @import "global/colors.scss";
 
 /*Blocks*/
@@ -11,25 +14,28 @@
 @import "blocks/business-rates.scss";
 @import "blocks/button.scss";
 @import "blocks/country-card.scss";
-@import "blocks/country.scss";
 @import "blocks/feedback.scss";
+@import "blocks/form-title.scss";
 @import "blocks/intro.scss";
 @import "blocks/level.scss";
 @import "blocks/location.scss";
 @import "blocks/logo-copyright.scss";
+@import "blocks/main-title.scss";
 @import "blocks/menu-main-nav.scss";
 @import "blocks/menu-user-nav-links.scss";
 @import "blocks/menu.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
-@import "blocks/page.scss";
 @import "blocks/preview-companion-profile.scss";
 @import "blocks/preview-companion-tags.scss";
-@import "blocks/preview-companion-vehicles.scss";
 @import "blocks/preview-companions.scss";
 @import "blocks/review.scss";
 @import "blocks/steps.scss";
 @import "blocks/title.scss";
 @import "blocks/user-nav.scss";
+@import "blocks/user-profile.scss";
 @import "blocks/ways-preview.scss";
+
+/*Global*/
+
+@import "global/global.scss";

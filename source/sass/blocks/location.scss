@@ -28,15 +28,15 @@
   border-radius: 10px;
 
   &:hover {
-    color: #ffffff;
+    color: $white;
     background: $dark_blue;
   }
 
   &:hover::after {
-    border-left-color: #ffffff;
+    border-left-color: $white;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: $get-directions-active;
   }
 }

@@ -27,10 +27,21 @@
   }
 
   &:active {
-    color: $basic_blue_light_active;
+    color: $basic_blue_light--active;
   }
 
   &:active::after {
     opacity: 0.3;
+  }
+}
+
+
+.button--round {
+  border-radius: 30px;
+  padding: 9px;
+  text-align: center;
+
+  &::after {
+    display: none;
   }
 }

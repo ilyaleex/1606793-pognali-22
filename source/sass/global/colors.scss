@@ -1,5 +1,8 @@
 
+$white: #ffffff;
+$black: #000000;
 $blue: #132576;
+$blue_header: #182044;
 $basic_blue: #161c35;
 $dark_blue: #192144;
 $brighter_blue: #1d2e5b;
@@ -11,10 +14,13 @@ $special_yellow_dark: #ffbd30;
 $basic_yellow: #ffd74b;
 $special_grey: #444444;
 
-$basic_blue_active: rgba(22, 28, 53, 0.3);
-$basic_blue_light_active: rgba(29, 46, 91, 0.3);
+$basic_blue--active: rgba(22, 28, 53, 0.3);
+$basic_blue_light--active: rgba(29, 46, 91, 0.3);
+$get-directions-active: rgba(255, 255, 255, 0.3);
 
 $level_background: rgba(0, 0, 0, 0.6);
+
+$border-color: rgba(0, 0, 0, 0.03);
 
 $offline_red: #f97676;
 $online_green: #81e31e;
