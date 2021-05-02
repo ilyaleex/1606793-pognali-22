@@ -27,7 +27,7 @@
   counter-increment: rate;
   width: 200px;
   margin: 19px 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $line-color-rate;
 
   &::after {
     display: flex;

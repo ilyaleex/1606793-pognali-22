@@ -1,18 +1,24 @@
 
+/*Global*/
+
+@import "global/global.scss";
+
 /*Fonts*/
 
 @import "global/fonts.scss";
 
 /*Colors*/
 
-@import "global/colors.scss";
+@import "global/variables.scss";
 
 /*Blocks*/
 
 @import "blocks/about-service.scss";
+@import "blocks/add-plan.scss";
 @import "blocks/add-your-profile.scss";
 @import "blocks/business-rates.scss";
 @import "blocks/button.scss";
+@import "blocks/calendar.scss";
 @import "blocks/country-card.scss";
 @import "blocks/feedback.scss";
 @import "blocks/form-title.scss";
@@ -33,9 +39,8 @@
 @import "blocks/steps.scss";
 @import "blocks/title.scss";
 @import "blocks/user-nav.scss";
+@import "blocks/user-plans-list-item.scss";
+@import "blocks/user-plans.scss";
 @import "blocks/user-profile.scss";
+@import "blocks/vehicles-list.scss";
 @import "blocks/ways-preview.scss";
-
-/*Global*/
-
-@import "global/global.scss";

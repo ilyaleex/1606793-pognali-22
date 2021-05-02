@@ -1,0 +1,25 @@
+
+.user-plans {
+  background: $special_blue_light;
+  border-radius: 30px 30px 0 0;
+  margin-top: -75px;
+}
+
+
+.user-plans__wrapper {
+  padding: 28px 25px 96px;
+}
+
+
+.user-plans__title {
+  margin-bottom: 29px;
+}
+
+
+.user-plans__list {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  counter-reset: plan;
+}

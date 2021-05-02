@@ -1,6 +1,6 @@
 
 .business-rates {
-  display: none;
+  // display: none;
   background: $white;
   border-radius: 20px;
   position: fixed;
@@ -35,10 +35,10 @@
 .business-rates__price-list-item {
   position: relative;
   width: 100%;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $line-color-business;
 
   &:last-child {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $line-color-business;
   }
 }
 
@@ -81,6 +81,5 @@
 
   &:active {
     color: $basic_blue_light--active;
-    opacity: 0.3;
   }
 }
