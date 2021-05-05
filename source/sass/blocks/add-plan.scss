@@ -1,8 +1,9 @@
 
 .add-plan {
+  position: relative;
   background: $add-plan-background;
   border-radius: 30px 30px 0 0;
-  margin-top: -75px;
+  margin-bottom: -75px;
 
   article {
     background: $white;
@@ -13,7 +14,7 @@
 
 
 .add-plan__wrapper {
-  padding: 30px 25px 90px;
+  padding: 30px 25px 108px;
 }
 
 
@@ -24,8 +25,8 @@
 
 .add-plan__step-title {
   max-width: 170px;
-  color: $brighter_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $blue--brighter;
+  font-family: $bold-font;
   font-size: 20px;
   line-height: 20px;
   margin: 0;
@@ -33,7 +34,7 @@
 
 
 .add-plan__step-description {
-  font-family: "bloggersans", "Arial", sans-serif;
+  font-family: $regular-font;
   color: $special_grey;
   font-size: 16px;
   line-height: 22px;
@@ -56,8 +57,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  color: $brighter_blue;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  color: $blue--brighter;
+  font-family: $medium-font;
   font-size: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -72,11 +73,11 @@
 
 
 .add-plan__parameter-input {
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: $medium-font;
   font-size: 15px;
   line-height: 14px;
   text-transform: uppercase;
-  color: $brighter_blue;
+  color: $blue--brighter;
   border-radius: 4px;
   padding: 16px 0 13px;
   border: 1px solid $border_color;
@@ -96,7 +97,6 @@
 
 .add-plan__parameter-value {
   position: absolute;
-  content: "";
   background: $plus-and-minus-button;
   bottom: 23px;
   cursor: pointer;
@@ -143,7 +143,29 @@
   position: relative;
   cursor: pointer;
   user-select: none;
-  font-family: "bloggersans", "Arial", sans-serif;
-  color: $brighter_blue;
+  font-family: $regular-font;
+  color: $blue--brighter;
   font-size: 15px;
+}
+
+
+.add-plan__previous-step {
+  display: inline-block;
+  font-family: $bold-font;
+  color: $blue--brighter;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 13px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

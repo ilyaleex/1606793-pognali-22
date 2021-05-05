@@ -30,7 +30,7 @@
             </li>
             <li class="menu-user-nav-links__item menu-user-nav-links__item--phone">
               <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--phone" href="tel:8-800-555-86-28">
-                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
+                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
             <li class="menu-user-nav-links__item menu-user-nav-links__item--mail">
@@ -120,13 +120,13 @@
         <form method="post" action="https://echo.htmlacademy.ru">
           <div class="step-status">
             <p class="step-status__item step-status__item--current">
-              <span class="step-status__item-name">Даты</span>
+              <span class="visually-hidden step-status__item-name">Даты</span>
             </p>
             <p class="step-status__item">
-              <span class="step-status__item-name">Маршрут</span>
+              <span class="visually-hidden step-status__item-name">Маршрут</span>
             </p>
             <p class="step-status__item">
-              <span class="step-status__item-name">Развлечения</span>
+              <span class="visually-hidden step-status__item-name">Развлечения</span>
             </p>
           </div>
           <article class="add-plan__step">
@@ -196,9 +196,11 @@
                   <li><button class="calendar__day" type="button" disabled>23</button></li>
                   <li><button class="calendar__day" type="button" disabled>24</button></li>
                   <li><button class="calendar__day" type="button" disabled>25</button></li>
-                  <li><button class="calendar__day calendar__day--chosen" type="button">26<span class="visually-hidden calendar__first-day">Заезд</span></button></li>
+                  <li><button class="calendar__day calendar__day--chosen" type="button">26<span class="visually-hidden calendar__first-day">Заезд</span></button>
+                  </li>
                   <li><button class="calendar__day calendar__day--chosen" type="button">27</button></li>
-                  <li><button class="calendar__day calendar__day--chosen" type="button">28<span class="visually-hidden calendar__last-day">Выезд</span></button></li>
+                  <li><button class="calendar__day calendar__day--chosen" type="button">28<span class="visually-hidden calendar__last-day">Выезд</span></button>
+                  </li>
                   <li><button class="calendar__day" type="button">29</button></li>
                   <li><button class="calendar__day" type="button">30</button></li>
                   <li><button class="calendar__day" type="button">31</button></li>
@@ -218,33 +220,33 @@
               <p class="add-plan__step-description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
               <ul class="add-plan__countries-selection countries-selection">
                 <li class="countries-selection__dropdown-country-list dropdown-country-list">
-                  <span class="dropdown-country-list__country-selection country country--bosnia-and-herzegovina">Босния и Герцеговина</span>
+                  <span class="dropdown-country-list__country-selection dropdown-country-list__country-selection--chosen-country country country--bosnia-and-herzegovina">Босния и Герцеговина</span>
                   <button class="dropdown-country-list__button-expand" type="button"><span class="visually-hidden">Выбор страны</span></button>
                   <button class="dropdown-country-list__country-selection-delete" type="button"><span class="visually-hidden">Удалить</span></button>
                 </li>
                 <li class="countries-selection__dropdown-country-list dropdown-country-list">
-                  <span class="dropdown-country-list__country-selection country country--czech">Чехия</span>
+                  <span class="dropdown-country-list__country-selection dropdown-country-list__country-selection--chosen-country country country--czech">Чехия</span>
                   <button class="dropdown-country-list__button-expand" type="button"><span class="visually-hidden">Выбор страны</span></button>
                   <button class="dropdown-country-list__country-selection-delete" type="button"><span class="visually-hidden">Удалить</span></button>
                 </li>
-                <li class="countries-selection__dropdown-country-list dropdown-country-list dropdown-country-list--opened">
-                  <span class="dropdown-country-list__country-selection">Выберете страну</span>
+                <li class="countries-selection__dropdown-country-list dropdown-country-list dropdown-country-list--expand">
+                  <span class="dropdown-country-list__country-selection dropdown-country-list__country-selection--expand">Выберете страну</span>
                   <button class="dropdown-country-list__button-expand" type="button"><span class="visually-hidden">Выбор страны</span></button>
                   <button class="dropdown-country-list__country-selection-delete" type="button"><span class="visually-hidden">Удалить</span></button>
                   <ul class="dropdown-country-list__alphabet alphabet">
-                    <li class="alphabet__item">А
+                    <li class="alphabet__item"><button class="alphabet__link alphabet__link--chosen" type="button" href="#">А</button>
                       <ul class="alphabet__countries">
-                        <li class="alphabet__country"><button type="button">Австралия</button></li>
-                        <li class="alphabet__country"><button type="button">Австрия</button></li>
-                        <li class="alphabet__country"><button type="button">Азербайджан</button></li>
-                        <li class="alphabet__country"><button type="button">Албания</button></li>
-                        <li class="alphabet__country"><button type="button">Алжир</button></li>
-                        <li class="alphabet__country"><button type="button">Ангола</button></li>
-                        <li class="alphabet__country"><button type="button">Андорра</button></li>
-                        <li class="alphabet__country"><button type="button">Антигуа и Барбуда</button></li>
-                        <li class="alphabet__country"><button type="button">Аргентина</button></li>
-                        <li class="alphabet__country"><button type="button">Армения</button></li>
-                        <li class="alphabet__country"><button type="button">Афганистан</button></li>
+                        <li><button class="alphabet__country" type="button">Австралия</button></li>
+                        <li><button class="alphabet__country" type="button">Австрия</button></li>
+                        <li><button class="alphabet__country" type="button">Азербайджан</button></li>
+                        <li><button class="alphabet__country" type="button">Албания</button></li>
+                        <li><button class="alphabet__country" type="button">Алжир</button></li>
+                        <li><button class="alphabet__country" type="button">Ангола</button></li>
+                        <li><button class="alphabet__country" type="button">Андорра</button></li>
+                        <li><button class="alphabet__country" type="button">Антигуа и Барбуда</button></li>
+                        <li><button class="alphabet__country" type="button">Аргентина</button></li>
+                        <li><button class="alphabet__country" type="button">Армения</button></li>
+                        <li><button class="alphabet__country" type="button">Афганистан</button></li>
                       </ul>
                     </li>
                     <li class="alphabet__item"><button class="alphabet__link" type="button" href="#">Б</button></li>
@@ -273,8 +275,8 @@
                     <li class="alphabet__item"><button class="alphabet__link" type="button" href="#">Я</button></li>
                   </ul>
                 </li>
-                <li class="countries-selection__dropdown-country-list dropdown-country-list">
-                  <p class="dropdown-country-list__country-adding">Добавить страну</p>
+                <li class="countries-selection__dropdown-country-list dropdown-country-list dropdown-country-list--add-country">
+                  <span class="dropdown-country-list__country-selection dropdown-country-list__country-selection--add-country">Добавить страну</span>
                   <button class="dropdown-country-list__add-country" type="button"><span class="visually-hidden">Добавить страну</span></button>
                 </li>
               </ul>
@@ -287,19 +289,19 @@
               <h3 class="add-plan__step-title"><span class="add-plan__step-number">Шаг 3. </span>Развлечения</h3>
               <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
               <ul class="add-plan__chosen-countries chosen-countries">
-                <li class="chosen-countries__country-flag country country--bosnia-and-herzegovina">
-                  <label class="chosen-countries__country-name" for="first-plan">Босния и Герцеговина</label>
-                  <textarea class="chosen-countries__plan-on-trip" placeholder="План действий" id="first-plan"></textarea>
+                <li class="chosen-countries__country">
+                  <span class="chosen-countries__country-name">Босния и Герцеговина</span>
+                  <textarea class="chosen-countries__plan-on-trip" placeholder="План действий"></textarea>
                 </li>
-                <li class="chosen-countries__country-flag country country--czech">
-                  <label class="chosen-countries__country-name" for="second-plan">Чехия</label>
-                  <textarea class="chosen-countries__plan-on-trip" placeholder="План действий" id="second-plan">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                <li class="chosen-countries__country">
+                  <span class="chosen-countries__country-name">Чехия</span>
+                  <textarea class="chosen-countries__plan-on-trip" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                 </li>
               </ul>
+              <button class="button button--round add-plan__submit" type="submit">Отправить</button>
+              <a class="add-plan__previous-step">На шаг назад</a>
             </div>
           </article>
-          <button class="button button--round add-plan__submit" type="submit">Отправить</button>
-          <a class="add-plan__previous-step">На шаг назад</a>
         </form>
       </div>
     </section>

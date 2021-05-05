@@ -11,7 +11,7 @@
   position: relative;
   counter-increment: step;
   color: $basic_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 18px;
   line-height: 18px;
   border-radius: 10px;
@@ -42,7 +42,7 @@
 
 
 .steps__item:nth-child(2) {
-  background: $special_orange_light;
+  background: $special_orange--light;
   z-index: 2;
   height: 100px;
 }

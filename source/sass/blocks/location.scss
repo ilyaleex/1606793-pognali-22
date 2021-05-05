@@ -14,8 +14,8 @@
 
 
 .location__address {
-  color: $brighter_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $blue--brighter;
+  font-family: $bold-font;
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
@@ -24,12 +24,12 @@
 
 
 .location__get-directions {
-  border: 3px solid $dark_blue;
+  border: 3px solid $blue--dark;
   border-radius: 10px;
 
   &:hover {
     color: $white;
-    background: $dark_blue;
+    background: $blue--dark;
   }
 
   &:hover::after {

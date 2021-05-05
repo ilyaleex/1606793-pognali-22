@@ -4,22 +4,25 @@
   background: $white;
   border-radius: 10px;
   padding: 24px 25px 23px;
-  margin-bottom: 10px;
   counter-increment: plan;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 
   &::before {
     position: absolute;
     content: counter(plan) ".";
     color: $basic_blue;
-    font-family: "bloggersans-medium", "Arial", sans-serif;
+    font-family: $medium-font;
     font-size: 16px;
-    top: 22px;
+    top: 23px;
   }
 
 
   &__countries {
     color: $basic_blue;
-    font-family: "bloggersans-bold", "Arial", sans-serif;
+    font-family: $bold-font;
     font-size: 16px;
     line-height: 16px;
     margin: 0 0 20px;
@@ -35,7 +38,7 @@
   }
 
   &__change-data {
-    font-family: "bloggersans-medium", "Arial", sans-serif;
+    font-family: $medium-font;
     background: none;
     font-size: 14px;
     text-align: center;
@@ -59,7 +62,7 @@
 .user-plans-list-item__companions,
 .user-plans-list-item__dates-interval {
   color: &basic_blue;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: $medium-font;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.06em;

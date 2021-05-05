@@ -60,7 +60,7 @@
 .business-rates__price-list-item-description,
 .business-rates__price-list-item-price {
   color: $special_grey;
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-family: $light-font;
   font-size: 16px;
   line-height: 22px;
 }
@@ -69,8 +69,8 @@
 .business-rates__close {
   border: none;
   background: $basic_blue_light;
-  color: $brighter_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $blue--brighter;
+  font-family: $bold-font;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;

@@ -7,7 +7,7 @@
 
 .menu-user-nav-links__item-link {
   color: $basic_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 16px;
 }
 
@@ -18,7 +18,7 @@
   width: 100%;
   color: $basic_blue;
   background: $basic_yellow;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 17px;
   border-radius: 50px;
   padding: 10px 0;

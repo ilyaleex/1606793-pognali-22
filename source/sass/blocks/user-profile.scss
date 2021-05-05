@@ -6,7 +6,7 @@
 
 
 .user-profile__wrapper {
-  padding: 75px 25px 89px;
+  padding: 75px 25px 109px;
 }
 
 
@@ -19,7 +19,7 @@
 .user-profile__change-photo {
   color: $basic_blue;
   background: $special_blue_light;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 20px;
   width: 100%;
   border-radius: 50px;
@@ -41,9 +41,9 @@
 
 .user-profile__user-tags-heading,
 .user-profile__vehicles-heading {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 16px;
-  color: $brighter_blue;
+  color: $blue--brighter;
   text-align: center;
   text-transform: uppercase;
 }
@@ -70,16 +70,15 @@
   position: absolute;
   background: $basic_blue_light;
   top: -25px;
-  width: 36px;
-  left: 85px;
+  left: 90px;
   padding: 0 17px;
   z-index: 1;
 }
 
 
 .user-profile__user-tags-field {
-  font-family: "bloggersans", "Arial", sans-serif;
-  color: $special_grey_tags;
+  font-family: $regular-font;
+  color: $special_grey--tags;
   font-size: 16px;
   line-height: 18px;
   width: 100%;

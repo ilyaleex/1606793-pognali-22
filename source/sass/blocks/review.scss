@@ -1,7 +1,7 @@
 
 .review__blockquote {
   color: $white;
-  font-family: "bloggersans", "Arial", sans-serif;
+  font-family: $regular-font;
   font-size: 16px;
   line-height: 22px;
   margin: 0;
@@ -12,7 +12,7 @@
 .review__cite {
   color: $white;
   font-style: normal;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 16px;
   line-height: 22px;
   padding-left: 25px;

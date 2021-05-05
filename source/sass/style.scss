@@ -1,7 +1,7 @@
 
-/*Global*/
+/*Normalize*/
 
-@import "global/global.scss";
+@import "normalize.scss";
 
 /*Fonts*/
 
@@ -11,15 +11,22 @@
 
 @import "global/variables.scss";
 
+/*Global*/
+
+@import "global/global.scss";
+
 /*Blocks*/
 
 @import "blocks/about-service.scss";
 @import "blocks/add-plan.scss";
 @import "blocks/add-your-profile.scss";
+@import "blocks/alphabet.scss";
 @import "blocks/business-rates.scss";
 @import "blocks/button.scss";
 @import "blocks/calendar.scss";
+@import "blocks/chosen-countries.scss";
 @import "blocks/country-card.scss";
+@import "blocks/dropdown-country-list.scss";
 @import "blocks/feedback.scss";
 @import "blocks/form-title.scss";
 @import "blocks/intro.scss";
@@ -36,6 +43,7 @@
 @import "blocks/preview-companion-tags.scss";
 @import "blocks/preview-companions.scss";
 @import "blocks/review.scss";
+@import "blocks/step-status.scss";
 @import "blocks/steps.scss";
 @import "blocks/title.scss";
 @import "blocks/user-nav.scss";
