@@ -4,12 +4,13 @@
   display: inline-block;
   box-sizing: border-box;
   width: 100%;
-  color: $brighter_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $blue--brighter;
+  font-family: $bold-font;
   font-size: 18px;
   background: $basic_yellow;
   border-radius: 10px;
   padding: 22px;
+  cursor: pointer;
 
   &::after {
     position: absolute;
@@ -19,7 +20,7 @@
     border-top: 6px solid transparent;
     border-right: 6px solid transparent;
     border-bottom: 6px solid transparent;
-    border-left: 10px solid $brighter_blue;
+    border-left: 10px solid $blue--brighter;
   }
 
   &:hover {

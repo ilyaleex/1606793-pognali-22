@@ -1,0 +1,70 @@
+
+.user-plans-list-item {
+  position: relative;
+  background: $white;
+  border-radius: 10px;
+  padding: 24px 25px 23px;
+  counter-increment: plan;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &::before {
+    position: absolute;
+    content: counter(plan) ".";
+    color: $basic_blue;
+    font-family: $medium-font;
+    font-size: 16px;
+    top: 23px;
+  }
+
+
+  &__countries {
+    color: $basic_blue;
+    font-family: $bold-font;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 0 20px;
+    padding-left: 16px;
+  }
+
+  &__companions {
+    margin: 0 0 5px;
+  }
+
+  &__dates-interval {
+    margin: 0 0 24px;
+  }
+
+  &__change-data {
+    font-family: $medium-font;
+    background: none;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
+
+
+.user-plans-list-item__companions,
+.user-plans-list-item__dates-interval {
+  color: &basic_blue;
+  font-family: $medium-font;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

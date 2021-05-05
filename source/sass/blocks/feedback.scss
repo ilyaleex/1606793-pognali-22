@@ -20,7 +20,7 @@
 
 .feedback__log-in-text {
   color: $white;
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-family: $light-font;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -63,7 +63,7 @@
 
 .feedback__log-in-input {
   box-sizing: border-box;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 24px;
   width: 100%;
   height: 58px;
@@ -81,14 +81,14 @@
 .feedback__log-in-input::placeholder {
   color: $special_grey;
   opacity: 0.3;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 18px;
 }
 
 
 .feedback__contacts-text {
   color: $white;
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-family: $light-font;
   font-size: 16px;
   line-height: 22px;
   text-align: center;

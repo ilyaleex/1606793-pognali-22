@@ -1,0 +1,117 @@
+
+.dropdown-country-list {
+  position: relative;
+  margin-bottom: 22px;
+
+  &__country-selection {
+    display: inline-block;
+    white-space: nowrap;
+    font-family: $medium-font;
+    color: $blue--brighter;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 13px 14px 13px 11px;
+    width: 166px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50px;
+      border: 1px solid $border-color;
+      right: -6px;
+      top: 17px;
+    }
+
+    &:hover {
+      border: 1px solid $dropdown-country-list-hover;
+    }
+
+    &--expand {
+      color: $white;
+      background: $active-element;
+      border: 1px solid $active-element;
+      pointer-events: none;
+      border-radius: 4px 4px 0 0;
+    }
+
+    &--add-country {
+      background: $basic_blue_light;
+    }
+
+    &--chosen-country::after {
+      position: absolute;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50px;
+      background: $blue--brighter;
+      border: 1px solid $blue--brighter;
+      right: -6px;
+      top: 17px;
+    }
+  }
+}
+
+
+.dropdown-country-list__button-expand {
+  position: absolute;
+  content: "";
+  background: url("../img/expand-country-arrow.svg") no-repeat;
+  opacity: 0.3;
+  top: 17px;
+  right: 14px;
+  width: 11px;
+  height: 9px;
+  cursor: pointer;
+}
+
+
+.dropdown-country-list__country-selection-delete {
+  position: absolute;
+  background: $basic_blue_light;
+  width: 21px;
+  height: 21px;
+  border-radius: 50px;
+  right: -11px;
+  top: -12px;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: url("../img/country-remove-cross.svg") no-repeat;
+    top: 6px;
+    right: 6px;
+    width: 9px;
+    height: 9px;
+    opacity: 0.3;
+  }
+}
+
+
+.dropdown-country-list__country-selection-delete:hover::after {
+  opacity: 0.1;
+}
+
+
+.dropdown-country-list__country-selection-delete:active::after {
+  opacity: 0.05;
+}
+
+
+.dropdown-country-list:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  background: url("../img/small-decorative-arrow.svg") no-repeat;
+  width: 8px;
+  height: 11px;
+  bottom: -18px;
+  right: 50px;
+}

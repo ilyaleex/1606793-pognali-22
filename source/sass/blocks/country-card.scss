@@ -10,7 +10,7 @@
 
 
 .country-card__name {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 21px;
   grid-column: 1 / 2;
 }
@@ -19,7 +19,7 @@
 .country-card__text {
   color: $special_grey;
   opacity: 0.3;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: $medium-font;
   font-size: 16px;
   line-height: 18px;
   grid-column: 1 / 2;
@@ -30,7 +30,7 @@
 .country-card__people-amount {
   position: relative;
   color: $basic_blue;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: $medium-font;
   opacity: 0.3;
   font-size: 16px;
   line-height: 20px;

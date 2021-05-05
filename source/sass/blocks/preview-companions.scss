@@ -20,7 +20,7 @@
 
 .preview-companions__description {
   color: $white;
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-family: $light-font;
   font-size: 16px;
   line-height: 22px;
   padding-left: 25px;
@@ -29,7 +29,7 @@
 
 .preview-companions__comment {
   color: $white;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-family: $bold-font;
   font-size: 16px;
   line-height: 22px;
   padding-left: 25px;

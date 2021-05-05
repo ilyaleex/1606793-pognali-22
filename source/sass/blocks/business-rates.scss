@@ -1,6 +1,6 @@
 
 .business-rates {
-  display: none;
+  // display: none;
   background: $white;
   border-radius: 20px;
   position: fixed;
@@ -35,10 +35,10 @@
 .business-rates__price-list-item {
   position: relative;
   width: 100%;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $line-color-business;
 
   &:last-child {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $line-color-business;
   }
 }
 
@@ -60,7 +60,7 @@
 .business-rates__price-list-item-description,
 .business-rates__price-list-item-price {
   color: $special_grey;
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-family: $light-font;
   font-size: 16px;
   line-height: 22px;
 }
@@ -69,8 +69,8 @@
 .business-rates__close {
   border: none;
   background: $basic_blue_light;
-  color: $brighter_blue;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $blue--brighter;
+  font-family: $bold-font;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -81,6 +81,5 @@
 
   &:active {
     color: $basic_blue_light--active;
-    opacity: 0.3;
   }
 }
