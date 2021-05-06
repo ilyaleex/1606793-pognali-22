@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <link href="css/style.css" rel="stylesheet">
   <title>Попутчики - Погнали</title>
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
+      <h1 class="main-title main-title--current-page">Попутчики</h1>
       <nav class="menu">
         <div class="menu__wrapper">
           <div class="page-header__nav scroll">
             <a class="page-header__logo" href="#" aria-label="Ссылка на главную страницу">
-              <img src="img/pognali-logo-white__no-background.svg" alt="Погнали?">
+              <img src="img/pognali-logo-white-no-background.svg" alt="Погнали?">
             </a>
             <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           <ul class="menu-main-nav">
             <li class="menu-main-nav__item"><a href="#">о сервисе</a></li>
-            <li class="menu-main-nav__item"><a href="catalog.html">направления</a></li>
-            <li class="menu-main-nav__item"><a href="form.html">попутчики</a></li>
+            <li class="menu-main-nav__item"><a href="form.html">направления</a></li>
+            <li class="menu-main-nav__item"><a href="catalog.html">попутчики</a></li>
           </ul>
-          <a class="menu__authorization-link" href="#">Авторизация</a>
           <ul class="menu-user-nav-links">
-            <li class="menu-user-nav-links__item">
+            <li class="menu-user-nav-links__item menu-user-nav-links__item--authorization">
+              <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--authorization" href="#">Авторизация</a>
+            </li>
+            <li class="menu-user-nav-links__item menu-user-nav-links__item--phone">
               <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--phone" href="tel:8-800-555-86-28">
-                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
+                <img class="menu-user-nav-links__item-link-phone-icon" src="img/alternate-phone-icon.svg" alt="Телефон">8 800 555-86-28
               </a>
             </li>
-            <li class="menu-user-nav-links__item">
+            <li class="menu-user-nav-links__item menu-user-nav-links__item--mail">
               <a class="menu-user-nav-links__item-link menu-user-nav-links__item-link--mail" href="mailto:mail@htmlacademy.ru">
                 <img class="menu-user-nav-links__item-link-mail-icon" src="img/alternate-mail-icon.svg" alt="Почта">mail@htmlacademy.ru
               </a>
@@ -44,7 +49,6 @@
     </div>
   </header>
   <main class="page-main">
-    <h1 class="main-title main-title--current-page">Попутчики</h1>
     <section class="country-filter">
       <div class="country-filter__wrapper">
         <h2 class="country-filter__title">Фильтрация по странам:</h2>
@@ -55,8 +59,8 @@
           <li class="continent-list__item">Острова</li>
         </ul>
         <button class="country-filter__toggle" type="button">Показать все</button>
-        <ul class="country-filter__alphabet-filter alphabet-filter">
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">А</a>
+        <ul class="country-filter__alphabet-filter alphabet-filter alphabet">
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet-filter__link--chosen" href="#">А</a>
             <ul class="alphabet-filter__countries">
               <li class="alphabet-filter__country"><a class="alphabet-filter__country-link" href="catalog.html/islands/australia">Австралия</a></li>
               <li class="alphabet-filter__country"><a class="alphabet-filter__country-link" href="catalog.html/europe/austria">Австрия</a></li>
@@ -71,36 +75,34 @@
               <li class="alphabet-filter__country"><a class="alphabet-filter__country-link" href="catalog.html/asia/afghanistan">Афганистан</a></li>
             </ul>
           </li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Б</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">В</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Г</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Д</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Е</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">З</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">И</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">К</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Л</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">М</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Н</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">О</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">П</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Р</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">С</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Т</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">У</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Ф</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Х</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Ч</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Ш</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Э</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Ю</a></li>
-          <li class="alphabet-filter__item"><a class="alphabet-filter__link" href="#">Я</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Б</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">В</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Г</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Д</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Е</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">З</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">И</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">К</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Л</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">М</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Н</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">О</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">П</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Р</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">С</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Т</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">У</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Ф</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Х</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Ч</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Ш</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Э</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Ю</a></li>
+          <li class="alphabet-filter__item alphabet__item"><a class="alphabet-filter__link alphabet__link" href="#">Я</a></li>
         </ul>
         <button class="country-filter__close" type="button">Свернуть</button>
       </div>
     </section>
-
-
     <form class="companion-filter" method="post" action="https://echo.htmlacademy.ru">
       <div class="companion-filter__wrapper">
         <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
@@ -185,8 +187,6 @@
         <button class="companion-filter__show-companion" type="submit">Показать</button>
       </div>
     </form>
-
-
     <section class="companions">
       <div class="companions__wrapper">
         <h2 class="visually-hidden">Список попутчиков</h2>
@@ -225,7 +225,6 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
-
         <article class="companion-profile">
           <img class="companion-profile__img" src="" alt="">
           <div class="companion-profile__likes-stats">
@@ -259,7 +258,6 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
-
         <article class="companion-profile">
           <img class="companion-profile__img" src="" alt="">
           <div class="companion-profile__likes-stats">
@@ -294,7 +292,6 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
-
         <article class="companion-profile">
           <img class="companion-profile__img" src="" alt="">
           <div class="companion-profile__likes-stats">
@@ -327,7 +324,6 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
-
         <button class="companions__show-more" type="button">Показать еще</button>
         <div class="companions__pagination">
           <a class="companions__pagination-button companions__pagination-button--previous-page" href="#"></a>
