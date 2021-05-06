@@ -19,7 +19,7 @@
 .user-profile__change-photo {
   color: $basic_blue;
   background: $special_blue_light;
-  font-family: $bold-font;
+  font-family: $regular-font;
   font-size: 20px;
   width: 100%;
   border-radius: 50px;
@@ -41,7 +41,8 @@
 
 .user-profile__user-tags-heading,
 .user-profile__vehicles-heading {
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 16px;
   color: $blue--brighter;
   text-align: center;

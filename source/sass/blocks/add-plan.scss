@@ -26,7 +26,7 @@
 .add-plan__step-title {
   max-width: 170px;
   color: $blue--brighter;
-  font-family: $bold-font;
+  font-family: $regular-font;
   font-size: 20px;
   line-height: 20px;
   margin: 0;
@@ -58,7 +58,8 @@
   justify-content: space-between;
   width: 100%;
   color: $blue--brighter;
-  font-family: $medium-font;
+  font-family: $regular-font;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -73,7 +74,8 @@
 
 
 .add-plan__parameter-input {
-  font-family: $medium-font;
+  font-family: $regular-font;
+  font-weight: 500;
   font-size: 15px;
   line-height: 14px;
   text-transform: uppercase;
@@ -144,6 +146,7 @@
   cursor: pointer;
   user-select: none;
   font-family: $regular-font;
+  font-weight: 700;
   color: $blue--brighter;
   font-size: 15px;
 }
@@ -151,7 +154,8 @@
 
 .add-plan__previous-step {
   display: inline-block;
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   color: $blue--brighter;
   font-size: 17px;
   letter-spacing: 0.01em;

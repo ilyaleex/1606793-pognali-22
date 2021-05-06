@@ -21,6 +21,7 @@
 .about-service__description {
   color: $white;
   font-family: $regular-font;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   padding-left: 25px;
@@ -28,7 +29,8 @@
 
 
 .about-service__comment {
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   color: $white;
   font-size: 16px;
   line-height: 22px;

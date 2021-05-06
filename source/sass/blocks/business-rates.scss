@@ -60,7 +60,8 @@
 .business-rates__price-list-item-description,
 .business-rates__price-list-item-price {
   color: $special_grey;
-  font-family: $light-font;
+  font-family: $regular-font;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
 }
@@ -70,7 +71,8 @@
   border: none;
   background: $basic_blue_light;
   color: $blue--brighter;
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
