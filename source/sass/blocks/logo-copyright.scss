@@ -1,0 +1,25 @@
+
+.logo-copyright {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  border-top: 1px solid $line-color-copyright;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.logo-copyright__text {
+  align-self: center;
+  color: $special_grey;
+  font-family: $regular-font;
+  font-size: 16px;
+  line-height: 16px;
+}

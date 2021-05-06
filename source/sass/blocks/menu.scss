@@ -1,0 +1,22 @@
+
+.menu {
+  // display: none;
+  background: $white;
+}
+
+
+.menu__wrapper {
+  padding: 22px 24px 38px;
+}
+
+
+.menu__socials {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.menu__social-item:not(:last-child) {
+  margin-right: 26px;
+}

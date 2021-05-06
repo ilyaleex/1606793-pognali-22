@@ -1,0 +1,102 @@
+
+.user-profile {
+  background: $basic_blue_light;
+  margin-top: -75px;
+}
+
+
+.user-profile__wrapper {
+  padding: 75px 25px 109px;
+}
+
+
+.user-profile__user-level {
+  width: 100px;
+  height: 100px;
+}
+
+
+.user-profile__change-photo {
+  color: $basic_blue;
+  background: $special_blue_light;
+  font-family: $regular-font;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px 40px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: $change-photo-hover;
+  }
+
+  &:active {
+    background: $special_blue_light;
+    color: $basic_blue--active;
+  }
+}
+
+
+.user-profile__user-tags-heading,
+.user-profile__vehicles-heading {
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 16px;
+  color: $blue--brighter;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.user-profile__vehicles-heading {
+  padding: 0 14px;
+}
+
+
+.user-profile__vehicles {
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+
+.user-profile__user-tags {
+  position: relative;
+}
+
+
+.user-profile__user-tags-heading {
+  position: absolute;
+  background: $basic_blue_light;
+  top: -25px;
+  left: 90px;
+  padding: 0 17px;
+  z-index: 1;
+}
+
+
+.user-profile__user-tags-field {
+  font-family: $regular-font;
+  color: $special_grey--tags;
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  background: none;
+  resize: none;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 25px;
+  overflow: hidden;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $border-color-hover;
+  }
+
+  &:focus {
+    border: 1px solid $basic_blue;
+  }
+}

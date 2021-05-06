@@ -1,0 +1,49 @@
+
+.preview-companions {
+  position: relative;
+  background: $basic_blue;
+  border-radius: 0 0 30px 30px;
+  margin-top: -75px;
+  z-index: 4;
+}
+
+
+.preview-companions__wrapper {
+  padding: 120px 25px 53px;
+}
+
+
+.preview-companions__title {
+  padding-left: 25px;
+}
+
+
+.preview-companions__description {
+  color: $white;
+  font-family: $regular-font;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+}
+
+
+.preview-companions__comment {
+  color: $white;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+}
+
+
+.preview-companion-profile__preview-companion-level {
+  background: $level_background;
+  color: $white;
+
+  &::before {
+    background: $white;
+    opacity: 0.3;
+  }
+}

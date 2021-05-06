@@ -1,0 +1,43 @@
+
+.location {
+  position: relative;
+  background: $basic_yellow;
+  border-radius: 0 0 30px 30px;
+  margin-top: -75px;
+  z-index: 1;
+}
+
+
+.location__wrapper {
+  padding: 102px 25px 56px;
+}
+
+
+.location__address {
+  color: $blue--brighter;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+
+.location__get-directions {
+  border: 3px solid $blue--dark;
+  border-radius: 10px;
+
+  &:hover {
+    color: $white;
+    background: $blue--dark;
+  }
+
+  &:hover::after {
+    border-left-color: $white;
+  }
+
+  &:active {
+    color: $get-directions-active;
+  }
+}

@@ -1,0 +1,54 @@
+
+.menu-user-nav-links {
+  margin: 0;
+  padding: 0;
+}
+
+
+.menu-user-nav-links__item-link {
+  color: $basic_blue;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+
+.menu-user-nav-links__item-link--authorization {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: $basic_blue;
+  background: $basic_yellow;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 50px;
+  padding: 10px 0;
+  margin-bottom: 66px;
+
+  &:hover {
+    background: $special_yellow_dark;
+  }
+
+  &:active {
+    color: $basic_blue_light--active;
+  }
+}
+
+
+.menu-user-nav-links__item--phone {
+  margin-bottom: 27px;
+}
+
+
+.menu-user-nav-links__item-link--feedback {
+  color: $basic_yellow;
+
+  &:hover {
+    color: $special_yellow_dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

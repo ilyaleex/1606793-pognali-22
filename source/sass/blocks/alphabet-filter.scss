@@ -1,0 +1,48 @@
+
+.alphabet-filter__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $regular-font;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $blue--brighter;
+  background: none;
+  width: 100%;
+
+  &--chosen {
+    color: $white;
+    background: $active-element;
+    pointer-events: none;
+  }
+}
+
+
+.alphabet-filter__countries {
+  position: absolute;
+  bottom: -306px;
+  width: 180px;
+  left: 0;
+  z-index: 1;
+  padding: 21px 19px;
+}
+
+
+.alphabet-filter__country-link {
+  font-family: $regular-font;
+  font-weight: 700;
+  color: $special_grey;
+  font-size: 16px;
+  background: none;
+  padding: 0;
+
+  &:hover {
+    color: $blue--brighter;
+  }
+
+  &:active {
+    color: $blue--brighter;
+    opacity: 0.3;
+  }
+}

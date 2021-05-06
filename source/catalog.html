@@ -12,7 +12,7 @@
         <div class="menu__wrapper">
           <div class="page-header__nav scroll">
             <a class="page-header__logo" href="#" aria-label="Ссылка на главную страницу">
-              <img src="img/pognali-logo-white__no-background.svg" alt="Погнали?">
+              <img src="img/pognali-logo-white-no-background.svg" alt="Погнали?">
             </a>
             <button class="menu__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -99,6 +99,8 @@
         <button class="country-filter__close" type="button">Свернуть</button>
       </div>
     </section>
+
+
     <form class="companion-filter" method="post" action="https://echo.htmlacademy.ru">
       <div class="companion-filter__wrapper">
         <h2 class="companion-filter__title">Подберите идеального попутчика</h2>
@@ -156,30 +158,10 @@
         <fieldset class="companion-filter__item companion-filter__item--dropdown companion-filter__item--opened">
           <legend class="companion-filter__item-heading">Транспорт:</legend>
           <ul class="companion-filter__vehicles-list vehicles-list">
-            <li class="companion-filter__vehicles-list-item vehicles-list__item">
-              <label class="vehicles-list__label" for="airplane">
-                <input class="vehicles-list__item vehicle vehicle--airplane" type="checkbox" name="airplane" id="airplane" checked>
-                <span class="vehicles-list__item-tooltip">Авиаперелет</span>
-              </label>
-            </li>
-            <li class="companion-filter__vehicles-list-item vehicles-list__item">
-              <label class="vehicles-list__label" for="car">
-                <input class="vehicles-list__item vehicle vehicle--car" type="checkbox" name="car" id="car" checked>
-                <span class="vehicles-list__item-tooltip">Автотранспорт</span>
-              </label>
-            </li>
-            <li class="companion-filter__vehicles-list-item vehicles-list__item">
-              <label class="vehicles-list__label" for="bike">
-                <input class="vehicles-list__item vehicle vehicle--bike" type="checkbox" name="bike" id="bike">
-                <span class="vehicles-list__item-tooltip">Велосипед</span>
-              </label>
-            </li>
-            <li class="companion-filter__vehicles-list-item vehicles-list__item">
-              <label class="vehicles-list__label" for="bike">
-                <input class="vehicles-list__item vehicle vehicle--by-foot" type="checkbox" name="by-foot" id="by-foot" checked>
-                <span class="vehicles-list__item-tooltip">Пешком</span>
-              </label>
-            </li>
+            <li class="companion-filter__vehicles-list-item vehicles-list__item"><span class="visually-hidden">Авиаперелет</span></li>
+            <li class="companion-filter__vehicles-list-item vehicles-list__item"><span class="visually-hidden">Автотранспорт</span></li>
+            <li class="companion-filter__vehicles-list-item vehicles-list__item"><span class="visually-hidden">Велосипед</span></li>
+            <li class="companion-filter__vehicles-list-item vehicles-list__item"><span class="visually-hidden">Пешком</span></li>
           </ul>
         </fieldset>
         <fieldset class="companion-filter__item companion-filter__item--dropdown">
@@ -188,9 +170,9 @@
             <div class="level-range__controls">
               <div class="level-range__scale">
                 <div class="level-range__bar"></div>
-                <button class="level-range__toggle level-range__toggle--min" type="button" aria-label="Ползунок минимального уровня"></button>
-                <button class="level-range__toggle level-range__toggle--max" type="button" aria-label="Ползунок максимального уровня"></button>
               </div>
+              <button class="level-range__toggle level-range__toggle--min" type="button" aria-label="Ползунок минимального уровня"></button>
+              <button class="level-range__toggle level-range__toggle--max" type="button" aria-label="Ползунок максимального уровня"></button>
               <div class="level-range__inputs">
                 <label for="min-level"><span class="visaully-hidden">Минимальный уровень</span></label>
                 <input class="level-range__input" type="number" name="min-level" id="min-level" value="30">
@@ -203,6 +185,8 @@
         <button class="companion-filter__show-companion" type="submit">Показать</button>
       </div>
     </form>
+
+
     <section class="companions">
       <div class="companions__wrapper">
         <h2 class="visually-hidden">Список попутчиков</h2>
@@ -241,6 +225,7 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
+
         <article class="companion-profile">
           <img class="companion-profile__img" src="" alt="">
           <div class="companion-profile__likes-stats">
@@ -274,6 +259,7 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
+
         <article class="companion-profile">
           <img class="companion-profile__img" src="" alt="">
           <div class="companion-profile__likes-stats">
@@ -308,6 +294,7 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
+
         <article class="companion-profile">
           <img class="companion-profile__img" src="" alt="">
           <div class="companion-profile__likes-stats">
@@ -340,6 +327,7 @@
           </div>
           <button class="companion-profile__call-companion" type="button">Позвать!</button>
         </article>
+
         <button class="companions__show-more" type="button">Показать еще</button>
         <div class="companions__pagination">
           <a class="companions__pagination-button companions__pagination-button--previous-page" href="#"></a>
@@ -351,7 +339,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="index.html" aria-label="Ссылка на главную страницу">
-        <img src="img/pognali-logo-blue__no-background.svg" alt="Погнали?">
+        <img src="img/pognali-logo-blue-no-background.svg" alt="Погнали?">
       </a>
       <ul class="page-footer__socials">
         <li class="page-footer__social-item"><a href="#"><img src="img/facebook-icon.svg" alt="Фэйсбук"></a></li>
@@ -364,4 +352,5 @@
     </div>
   </footer>
 </body>
+
 </html>

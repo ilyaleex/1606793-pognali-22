@@ -1,0 +1,121 @@
+
+.calendar__toggle {
+  position: relative;
+}
+
+
+.calendar__month {
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 20px;
+  color: $blue--brighter;
+  text-align: center;
+  padding: 11px 0;
+  border-top: 1px solid $calendar-lines;
+  border-bottom: 1px solid $calendar-lines;
+}
+
+
+.calendar__month-slider {
+  position: absolute;
+  content: "";
+  background: url("../img/month-slider-arrow.svg") no-repeat;
+  opacity: 0.3;
+  top: 13px;
+  width: 9px;
+  height: 20px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--back {
+    left: 0;
+    transform: rotate(180deg);
+  }
+
+  &--forward {
+    right: 0;
+  }
+}
+
+
+.calendar__weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+  margin: 0;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 14px;
+  color: $special_grey;
+  height: 32px;
+}
+
+
+.calendar__weekday {
+  justify-self: center;
+  align-self: center;
+
+  &--weekend {
+    color: $calendar_orange;
+  }
+}
+
+
+.calendar__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 32px);
+  padding: 0;
+  margin: 0 0 22px 0;
+
+  li {
+    justify-self: center;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid $calendar-lines;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+.calendar__day {
+  font-family: $regular-font;
+  font-weight: 500;
+  font-size: 14px;
+  background: $calendar-day-background;
+  color: $blue--brighter;
+  width: 100%;
+
+  &:hover {
+    color: $white;
+    background: $blue--brighter;
+    outline: 2px solid $calendar_orange;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background: none;
+    color: $special_grey;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &--chosen {
+    color: $white;
+    background: $blue--brighter;
+
+    &:hover {
+      outline: none;
+      cursor: default;
+    }
+  }
+}

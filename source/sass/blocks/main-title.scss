@@ -1,0 +1,20 @@
+
+.main-title {
+  position: relative;
+  color: $white;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+
+  &--current-page::after {
+    position: absolute;
+    content: "";
+    background: $special_orange;
+    height: 5px;
+    width: 214px;
+    border-radius: 4px;
+    bottom: -9px;
+    left: 0;
+  }
+}

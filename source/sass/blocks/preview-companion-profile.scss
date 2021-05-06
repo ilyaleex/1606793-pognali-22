@@ -1,0 +1,18 @@
+
+.preview-companion-profile {
+  background: $white;
+  width: 270px;
+  height: 428px;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 9px;
+}
+
+
+.preview-companion-profile__name {
+  color: $blue--brighter;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}

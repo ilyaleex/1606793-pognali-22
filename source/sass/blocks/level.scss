@@ -1,0 +1,59 @@
+
+.level {
+  color: $basic_blue;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: 9px;
+  text-align: center;
+  vertical-align: center;
+}
+
+
+.level__number {
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 10px;
+
+  &--user {
+    padding: 15px 0 2px 0;
+    font-size: 38px;
+  }
+}
+
+
+.level__text {
+  position: relative;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+
+  &--user {
+    padding-top: 2px;
+    font-size: 18px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    top: -2px;
+    left: 15px;
+    background: $special_grey;
+    opacity: 0.3;
+  }
+
+  &--line::before {
+    background: $white;
+    opacity: 0.3;
+  }
+
+  &--user::before {
+    width: 51px;
+    left: 25px;
+  }
+}

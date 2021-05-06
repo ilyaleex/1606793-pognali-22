@@ -1,0 +1,175 @@
+
+.add-plan {
+  position: relative;
+  background: $add-plan-background;
+  border-radius: 30px 30px 0 0;
+  margin-bottom: -75px;
+
+  article {
+    background: $white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.add-plan__wrapper {
+  padding: 30px 25px 108px;
+}
+
+
+.add-plan__step-wrapper {
+  padding: 24px 25px 17px;
+}
+
+
+.add-plan__step-title {
+  max-width: 170px;
+  color: $blue--brighter;
+  font-family: $regular-font;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+}
+
+
+.add-plan__step-description {
+  font-family: $regular-font;
+  color: $special_grey;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+
+.add-plan__step-number {
+  padding-right: 60px;
+}
+
+
+.add-plan__parameter {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+
+.add-plan__parameter-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: $blue--brighter;
+  font-family: $regular-font;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  span {
+    justify-self: end;
+    letter-spacing: 0.07em;
+    opacity: 0.3;
+  }
+}
+
+
+.add-plan__parameter-input {
+  font-family: $regular-font;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $blue--brighter;
+  border-radius: 4px;
+  padding: 16px 0 13px;
+  border: 1px solid $border_color;
+  text-align: center;
+  width: 100%;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $add-plan-parametr-hover;
+  }
+
+  &:focus {
+    border: 1px solid $basic_blue;
+  }
+}
+
+
+.add-plan__parameter-value {
+  position: absolute;
+  background: $plus-and-minus-button;
+  bottom: 23px;
+  cursor: pointer;
+
+  &:hover {
+    background: $plus-and-minus-button-hover;
+  }
+
+  &:active {
+    background: $plus-and-minus-button-active;
+  }
+
+  &--less {
+    width: 14px;
+    height: 2px;
+    left: 13px;
+  }
+
+  &--more {
+    right: 13px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background: $plus-and-minus-button;
+      width: 2px;
+      height: 14px;
+      right: 5px;
+      bottom: -6px;
+    }
+
+    &:hover::after {
+      background: $plus-and-minus-button-hover;
+    }
+
+    &:active::after {
+      background: $plus-and-minus-button-active;
+    }
+  }
+}
+
+
+.add-plan__label-children {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-family: $regular-font;
+  font-weight: 700;
+  color: $blue--brighter;
+  font-size: 15px;
+}
+
+
+.add-plan__previous-step {
+  display: inline-block;
+  font-family: $regular-font;
+  font-weight: 700;
+  color: $blue--brighter;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 13px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

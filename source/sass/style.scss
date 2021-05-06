@@ -1,1 +1,54 @@
-// Начните писать стили здесь
+
+/*Normalize*/
+
+@import "normalize.scss";
+
+/*Fonts*/
+
+@import "global/fonts.scss";
+
+/*Colors*/
+
+@import "global/variables.scss";
+
+/*Global*/
+
+@import "global/global.scss";
+
+/*Blocks*/
+
+@import "blocks/about-service.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/add-your-profile.scss";
+@import "blocks/alphabet.scss";
+@import "blocks/business-rates.scss";
+@import "blocks/button.scss";
+@import "blocks/calendar.scss";
+@import "blocks/chosen-countries.scss";
+@import "blocks/country-card.scss";
+@import "blocks/dropdown-country-list.scss";
+@import "blocks/feedback.scss";
+@import "blocks/form-title.scss";
+@import "blocks/intro.scss";
+@import "blocks/level.scss";
+@import "blocks/location.scss";
+@import "blocks/logo-copyright.scss";
+@import "blocks/main-title.scss";
+@import "blocks/menu-main-nav.scss";
+@import "blocks/menu-user-nav-links.scss";
+@import "blocks/menu.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/preview-companion-profile.scss";
+@import "blocks/preview-companion-tags.scss";
+@import "blocks/preview-companions.scss";
+@import "blocks/review.scss";
+@import "blocks/step-status.scss";
+@import "blocks/steps.scss";
+@import "blocks/title.scss";
+@import "blocks/user-nav.scss";
+@import "blocks/user-plans-list-item.scss";
+@import "blocks/user-plans.scss";
+@import "blocks/user-profile.scss";
+@import "blocks/vehicles-list.scss";
+@import "blocks/ways-preview.scss";

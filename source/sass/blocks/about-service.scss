@@ -1,0 +1,38 @@
+
+.about-service {
+  position: relative;
+  border-radius: 0 0 30px 30px;
+  background: $basic_blue;
+  z-index: 6;
+  margin-top: -20px;
+}
+
+
+.about-service__wrapper {
+  padding: 33px 25px 82px;
+}
+
+
+.about-service__title {
+  padding-left: 25px;
+}
+
+
+.about-service__description {
+  color: $white;
+  font-family: $regular-font;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+}
+
+
+.about-service__comment {
+  font-family: $regular-font;
+  font-weight: 700;
+  color: $white;
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 25px;
+}
