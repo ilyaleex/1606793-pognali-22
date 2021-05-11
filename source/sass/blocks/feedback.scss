@@ -20,7 +20,8 @@
 
 .feedback__log-in-text {
   color: $white;
-  font-family: $light-font;
+  font-family: $regular-font;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -63,7 +64,8 @@
 
 .feedback__log-in-input {
   box-sizing: border-box;
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 24px;
   width: 100%;
   height: 58px;
@@ -81,14 +83,16 @@
 .feedback__log-in-input::placeholder {
   color: $special_grey;
   opacity: 0.3;
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 18px;
 }
 
 
 .feedback__contacts-text {
   color: $white;
-  font-family: $light-font;
+  font-family: $regular-font;
+  font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   text-align: center;

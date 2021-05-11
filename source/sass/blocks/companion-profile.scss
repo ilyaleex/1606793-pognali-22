@@ -1,0 +1,189 @@
+
+.companion-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: $white;
+  padding: 15px 20px 23px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-family: $regular-font;
+}
+
+
+.companion-profile__img {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+
+.companion-profile__like-button {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+
+.companion-profile__name {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-weight: 700;
+  font-size: 20px;
+  color: $blue--brighter;
+  max-width: 106px;
+
+  &--online::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: $online_green;
+    border-radius: 50px;
+    right: -74px;
+    top: 10px;
+  }
+
+  &--offline::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: $offline_red;
+    border-radius: 50px;
+    right: -74px;
+    top: 10px;
+  }
+}
+
+
+.companion-profile__likes-amount {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $basic_blue;
+}
+
+
+.companion-tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 176px;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+
+.companion-profile__countries-want-to-visit {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+}
+
+
+.companion-profile__companion-vehicles {
+  grid-column: 1 / -1;
+  grid-row: 5 / 6;
+}
+
+
+.companion-profile__companion-level-wrapper {
+  justify-self: end;
+  grid-column: 3 / -1;
+  grid-row: 5 / 6;
+}
+
+
+.companion-profile__call-companion {
+  grid-column: 1 / -1;
+  grid-row: 6 / 7;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 14px 0 13px 0;
+  background: $basic_yellow;
+  border-radius: 25px;
+  cursor: pointer;
+
+  &:hover {
+    background: $special_yellow_dark;
+  }
+
+  &:active {
+    background: $special_yellow_dark;
+    color: rgba($blue--brighter, 0.3);
+  }
+}
+
+
+.companion-profile__countries-want-to-visit-heading {
+  padding-left: 6px;
+}
+
+
+.companion-profile__companion-vehicles-heading {
+  padding-left: 7px;
+}
+
+
+.companion-profile__countries-want-to-visit-heading,
+.companion-profile__companion-vehicles-heading,
+.companion-profile__companion-level-heading {
+  position: relative;
+  font-size: 15px;
+  color: $special_grey;
+}
+
+
+.companion-profile__companion-level-heading::after,
+.companion-profile__companion-vehicles-heading::before,
+.companion-profile__companion-vehicles-heading::after,
+.companion-profile__countries-want-to-visit-heading::before,
+.companion-profile__countries-want-to-visit-heading::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: $basic_blue_light;
+  top: 50%;
+}
+
+
+.companion-profile__companion-vehicles-heading::before,
+.companion-profile__countries-want-to-visit-heading::before {
+  width: 15px;
+  left: -20px;
+}
+
+
+.companion-profile__countries-want-to-visit-heading::after {
+  width: 138px;
+  right: -20px;
+}
+
+
+.companion-profile__companion-vehicles-heading::after {
+  width: 92px;
+  left: 82px;
+}
+
+
+.companion-profile__companion-level-heading {
+  margin-left: 5px;
+
+  &::after {
+    right: -20px;
+    width: 12px;
+  }
+}
+
+
+.companion-profile__companion-level-wrapper .level {
+  color: $blue--brighter;
+  width: 45px;
+  height: 45px;
+}
+
+
+.companion-profile__companion-level-wrapper .level__text {
+  display: none;
+}

@@ -1,28 +1,58 @@
 
+.alphabet-filter {
+  position: relative;
+  // visibility: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 25px;
+  margin-bottom: 242px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    border: 1px solid $border_color;
+    background: $white;
+    width: 42px;
+    height: 40px;
+  }
+}
+
+
 .alphabet-filter__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $medium-font;
+  font-family: $regular-font;
+  font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
   color: $blue--brighter;
   background: none;
   width: 100%;
 
+  &:hover {
+    outline: 1px solid $border-hover;
+  }
+
+  &:active {
+    color: $white;
+    background: $active-element;
+  }
+
   &--chosen {
     color: $white;
     background: $active-element;
     pointer-events: none;
+    width: 100%;
   }
 }
 
 
 .alphabet-filter__countries {
   position: absolute;
-  bottom: -306px;
+  bottom: -235px;
   width: 180px;
-  left: 0;
+  left: 6px;
   z-index: 1;
   padding: 21px 19px;
 }

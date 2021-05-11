@@ -1,0 +1,121 @@
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+
+.level-range {
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  gap: 24px;
+}
+
+
+.level-range__inputs {
+  display: flex;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 11px;
+    background: linear-gradient(to bottom, $white 46%, $border-color 46%, $border-color 54%, $white 54%);
+    left: 102px;
+    top: 16px;
+  }
+}
+
+
+.level-range__input {
+  font-family: $regular-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  color: $blue--brighter;
+  width: 109px;
+  border: 1px solid $border-color;
+  padding: 13px 0 10px 0;
+  text-align: center;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $border-hover;
+  }
+
+  &:focus {
+    border: 1px solid $black;
+  }
+}
+
+
+.level-range__input[name="min-level"] {
+  border-radius: 4px 0 0 4px;
+}
+
+
+.level-range__input[name="max-level"] {
+  border-radius: 0 4px 4px 0;
+}
+
+
+.level-range__controls {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+
+.level-range__scale {
+  width: 100%;
+  height: 2px;
+  background: rgba($blue--brighter, 0.2);
+}
+
+
+.level-range__bar {
+  height: 2px;
+  right: 0;
+  background: $blue--brighter;
+}
+
+
+.level-range__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background: $blue--brighter;
+  cursor: pointer;
+  top: -4px;
+
+  &:hover {
+    width: 19px;
+    height: 19px;
+    top: -8px;
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px rgba($black, 0.24);
+  }
+}
+
+
+.level-range__toggle--min {
+  left: 30%;
+
+  &:hover {
+    left: 28%;
+  }
+}
+
+
+.level-range__toggle--max {
+  left: 95%;
+
+  &:hover {
+    left: 93%;
+  }
+}

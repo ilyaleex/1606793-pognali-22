@@ -14,7 +14,8 @@
     position: absolute;
     content: counter(plan) ".";
     color: $basic_blue;
-    font-family: $medium-font;
+    font-family: $regular-font;
+    font-weight: 500;
     font-size: 16px;
     top: 23px;
   }
@@ -22,7 +23,8 @@
 
   &__countries {
     color: $basic_blue;
-    font-family: $bold-font;
+    font-family: $regular-font;
+    font-weight: 700;
     font-size: 16px;
     line-height: 16px;
     margin: 0 0 20px;
@@ -38,7 +40,8 @@
   }
 
   &__change-data {
-    font-family: $medium-font;
+    font-family: $regular-font;
+    font-weight: 500;
     background: none;
     font-size: 14px;
     text-align: center;
@@ -62,7 +65,8 @@
 .user-plans-list-item__companions,
 .user-plans-list-item__dates-interval {
   color: &basic_blue;
-  font-family: $medium-font;
+  font-family: $regular-font;
+  font-weight: 500;
   font-size: 14px;
   line-height: 14px;
   letter-spacing: 0.06em;

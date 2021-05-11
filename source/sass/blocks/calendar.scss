@@ -5,7 +5,8 @@
 
 
 .calendar__month {
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 20px;
   color: $blue--brighter;
   text-align: center;
@@ -86,7 +87,8 @@
 
 
 .calendar__day {
-  font-family: $medium-font;
+  font-family: $regular-font;
+  font-weight: 500;
   font-size: 14px;
   background: $calendar-day-background;
   color: $blue--brighter;

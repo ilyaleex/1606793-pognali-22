@@ -77,7 +77,8 @@
 .add-your-profile__price-list-item-description,
 .add-your-profile__price-list-item-price {
   color: $special_grey;
-  font-family: $light-font;
+  font-family: $regular-font;
+  font-weight: 300;
   font-size: 16px;
   line-height: 16px;
 }
@@ -89,7 +90,8 @@
   background: none;
   cursor: pointer;
   color: $blue;
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 16px;
   line-height: 16px;
 

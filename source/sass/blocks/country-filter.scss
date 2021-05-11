@@ -1,4 +1,50 @@
 
 .country-filter {
   background: $country-filter-background;
+  margin-top: -75px;
+  border-radius: 0 0 20px 20px;
+  padding: 0 25px;
+
+  &__wrapper {
+    padding-top: 95px;
+  }
+}
+
+
+.country-filter__close {
+  position: relative;
+  cursor: pointer;
+  font-family: $regular-font;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue--dark;
+  background: $country-filter-close;
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px 0 10px 25px;
+  margin-bottom: 28px;
+
+  &:hover {
+    background: $country-filter-close--hover;
+  }
+
+  &:active {
+    color: $country-filter-close--active;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: url("../img/country-filter-expand-cross.svg");
+    width: 14px;
+    height: 14px;
+    left: 88px;
+    top: 14px;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }

@@ -4,14 +4,14 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: 9px;
   text-align: center;
   vertical-align: center;
 }
 
 
 .level__number {
-  font-family: $bold-font;
+  font-family: $regular-font;
+  font-weight: 700;
   font-size: 24px;
   margin: 0;
   padding-top: 10px;
