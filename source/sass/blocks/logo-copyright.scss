@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 13px;
-  border-top: 1px solid rgba(0, 0, 0, 0.03);
+  border-top: 1px solid $line-color-copyright;
 
   &:hover {
     opacity: 0.6;
