@@ -1,0 +1,64 @@
+
+.parameter-list {
+  display: none;
+  margin-top: 5px;
+
+  &__item {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--expanded {
+    display: block;
+  }
+}
+
+
+.parameter-list__label {
+  font-family: $regular-font;
+  font-size: 16px;
+  padding-left: 26px;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.parameter-list__label::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: $white;
+  left: -1px;
+}
+
+
+.parameter-list__label:hover::before {
+  opacity: 0.6;
+}
+
+
+.parameter-list__checkbox:checked + .parameter-list__label::after {
+  position: absolute;
+  content: "";
+  background: url("../img/companion-filter-checkmark.svg") no-repeat;
+  background-position: center;
+  width: 9px;
+  height: 10px;
+  left: 3px;
+  top: 5px;
+  pointer-events: none;
+}

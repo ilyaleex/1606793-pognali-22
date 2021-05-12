@@ -9,10 +9,35 @@
 
 
 .preview-companion-profile__name {
+  position: relative;
+  display: inline-block;
   color: $blue--brighter;
   font-family: $regular-font;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
+  padding-left: 16px;
+
+  &--online::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: $online_green;
+    border-radius: 50px;
+    left: 0;
+    top: 8px;
+  }
+
+  &--offline::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: $offline_red;
+    border-radius: 50px;
+    left: 0;
+    top: 8px;
+  }
 }
