@@ -51,18 +51,23 @@ $online_green: #81e31e;
 
 $blue--header: #182044;
 $special_grey--tags: rgba(68, 68, 68, 0.6);
-$add-plan-background: #d4d9eb;
+$add-plan-background: $basic_blue_light;
 $calendar-day-background: $basic_blue_light;
 $alphabet-item-selected--mobile: $basic_blue_light;
 $level_background: rgba(0, 0, 0, 0.6);
 $plus-and-minus-button: #cccccc;
 $calendar_orange: #ff5c23;
 $country-filter-background: #e2e5f2;
+$add-your-profile-background: $country-filter-background;
 $country-filter-close: #d6daed;
 $country-filter-close--hover: #c8cee8;
 $country-filter-close--active: rgba(25, 33, 68, 0.3);
 
-
 /*Fonts*/
 
 $regular-font: "Blogger Sans", "Arial", sans-serif;
+
+/*Viewports*/
+
+$tablet-width: 768px;
+$desktop-width: 1440px;

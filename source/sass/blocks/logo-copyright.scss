@@ -13,6 +13,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 
@@ -21,5 +25,9 @@
   color: $special_grey;
   font-family: $regular-font;
   font-size: 16px;
-  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-right: 23px;
+  }
 }

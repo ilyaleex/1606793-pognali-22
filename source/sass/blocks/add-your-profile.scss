@@ -1,33 +1,92 @@
 
 .add-your-profile {
   position: relative;
-  background: $special_blue_light;
+  background: $add-plan-background;
   border-radius: 0 0 30px 30px;
   margin-top: -75px;
   z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 
 .add-your-profile__wrapper {
-  margin: 0 auto;
   padding: 104px 25px 37px 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 141px 40px 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 179px 244px 165px 130px;
+  }
+}
+
+
+.add-your-profile__title {
+  max-width: 150px;
+  margin: 0 0 43px 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    text-align: center;
+    margin: 0 0 73px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 129px 0;
+  }
 }
 
 
 .add-your-profile__price-list {
   position: relative;
   list-style: none;
-  padding: 0;
   counter-reset: rate;
+  margin: 0 0 31px 0;
+  padding: 0 45px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 33px 0;
+    padding: 0 35px 0 90px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 198px;
+      height: 285px;
+      background: $add-your-profile-background;
+      border-radius: 20px;
+      top: -38px;
+      right: 0;
+      z-index: -999;
+
+      @media (min-width: $desktop-width) {
+        width: 446px;
+        height: 300px;
+        top: -38px;
+        right: 0;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 161px;
+  }
 }
 
 
 .add-your-profile__price-list-item {
   position: relative;
   counter-increment: rate;
-  width: 200px;
   margin: 19px 0;
   border-top: 1px solid $line-color-rate;
+
+  &:last-child {
+    border-bottom: 1px solid $line-color-rate;
+  }
 
   &::after {
     display: flex;
@@ -44,6 +103,13 @@
     top: 0;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 28px;
+      width: 68px;
+      height: 68px;
+      left: -89px;
+    }
   }
 
   &:nth-child(1)::after {
@@ -57,11 +123,21 @@
   &:nth-child(3)::after {
     background: $basic_yellow;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 
 .add-your-profile__price-list-item-description {
   margin: 10px 0 6px;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 0 19px;
+  }
 }
 
 
@@ -70,6 +146,15 @@
 
   &:last-child {
     margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    align-self: center;
   }
 }
 
@@ -81,6 +166,11 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 
@@ -101,5 +191,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }

@@ -1,4 +1,28 @@
 
+.user-nav {
+  display: none;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+
+.user-nav--shifted {
+  display: none;
+  margin-bottom: 10px;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+
 .user-nav__item-link--authorization {
   color: $basic_blue;
   background: $basic_yellow;
@@ -7,6 +31,7 @@
   font-size: 17px;
   border-radius: 50px;
   padding: 10px 40px;
+
 
   &:hover {
     background: $special_yellow_dark;

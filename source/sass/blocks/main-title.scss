@@ -6,6 +6,8 @@
   font-weight: 700;
   font-size: 36px;
   margin: 0;
+  order: 1;
+  margin-bottom: 7px;
 
   &--current-page::after {
     position: absolute;

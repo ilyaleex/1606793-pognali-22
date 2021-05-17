@@ -6,6 +6,12 @@
   border-radius: 10px;
   padding: 26px 24px 24px;
   margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 20px;
+    padding: 30px 30px 16px;
+  }
 }
 
 
@@ -14,6 +20,11 @@
   font-weight: 700;
   font-size: 21px;
   grid-column: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
 }
 
 
@@ -26,6 +37,11 @@
   line-height: 18px;
   grid-column: 1 / 2;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 
@@ -36,20 +52,35 @@
   font-weight: 500;
   opacity: 0.3;
   font-size: 16px;
-  line-height: 20px;
   padding-left: 18px;
   grid-row: 1 / 2;
   grid-column: 2 / -1;
   justify-self: end;
   align-self: center;
 
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / -1;
+    grid-column: 1 / 2;
+    justify-self: start;
+    font-size: 20px;
+    padding-left: 30px;
+  }
+
   &::before {
     position: absolute;
     content: "";
-    background: url("../img/human-icon.svg");
+    background: url("../img/human-icon.svg") no-repeat;
     left: 0;
     top: 5px;
     width: 11px;
     height: 11px;
+
+    @media (min-width: $tablet-width) {
+      background: url("../img/human-icon-tablet.svg") no-repeat;
+      left: 0;
+      top: 2px;
+      width: 18px;
+      height: 20px;
+    }
   }
 }

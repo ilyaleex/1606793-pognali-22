@@ -68,11 +68,20 @@
 }
 
 
+.user-profile__user-tags-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: -9px;
+  left: 0;
+}
+
+
 .user-profile__user-tags-heading {
   position: absolute;
   background: $basic_blue_light;
-  top: -25px;
-  left: 90px;
+  top: -10px;
   padding: 0 17px;
   z-index: 1;
 }

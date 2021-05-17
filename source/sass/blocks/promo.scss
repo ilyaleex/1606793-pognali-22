@@ -1,0 +1,12 @@
+
+@media (min-width: $desktop-width) {
+  .promo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 23px 0 67px;
+  }
+
+  .intro__slogan {
+    margin: 0;
+  }
+}
