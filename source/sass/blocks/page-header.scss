@@ -1,13 +1,68 @@
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background: $blue--header;
-  border-radius: 0 0 30px 30px;
+  background: $basic-blue;
 }
 
 
-.page-header--main {
-  border-radius: unset;
+.page-header__nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 688px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1320px;
+  }
+}
+
+
+.menu-main-nav-desktop {
+  display: none;
+  position: relative;
+  font-family: $regular-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &__item {
+    display: inline-block;
+    margin-right: 34px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: $white;
+    top: 9px;
+    left: -105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+
+.menu-main-nav-desktop__item:last-child {
+  margin: 0;
+}
+
+
+.menu-main-nav-desktop__item a {
+  color: $white;
+}
+
+
+.menu-toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

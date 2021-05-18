@@ -14,9 +14,12 @@
 
 .preview-companions__wrapper {
   padding: 139px 25px 31px;
+  max-width: 270px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 212px 75px 87px;
+    max-width: 620px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 630px;
     grid-template-rows: 1fr 80px;
+    max-width: 1320px;
   }
 }
 
@@ -83,6 +87,9 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     max-width: 427px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-left: 70px;
   }
 }

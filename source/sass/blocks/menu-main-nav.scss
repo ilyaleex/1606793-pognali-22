@@ -13,4 +13,9 @@
   text-transform: uppercase;
   font-size: 30px;
   line-height: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 71px;
+  }
 }

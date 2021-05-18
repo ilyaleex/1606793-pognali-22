@@ -14,10 +14,18 @@
 
 
 .about-service__wrapper {
-  padding: 0 49px 82px;
+  padding: 0 24px 82px;
+  max-width: 211px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 75px;
+    padding: 0 35px;
+    max-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+    max-width: 1060px;
   }
 }
 

@@ -1,7 +1,11 @@
 
 .menu-user-nav-links {
-  margin: 0;
+  margin: 0 0 41px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 129px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -41,6 +45,17 @@
 
   &:active {
     color: $basic_blue_light--active;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 188px;
+    top: 40px;
+    right: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 }
 

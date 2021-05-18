@@ -61,7 +61,7 @@
 
     @media (min-width: $desktop-width) {
       font-size: 24px;
-      left: 304px;
+      left: 280px;
       top: 30px;
     }
   }
@@ -70,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .steps__item:last-child::after {
-    left: 326px;
+    left: 300px;
   }
 }
 
