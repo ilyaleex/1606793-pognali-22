@@ -17,6 +17,8 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1320px;
+    display: grid;
+    grid-template-columns: 1fr 832px 1fr;
   }
 }
 
@@ -31,7 +33,6 @@
   text-transform: uppercase;
 
   &__item {
-    display: inline-block;
     margin-right: 34px;
   }
 
@@ -46,7 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
   }
 }
 
