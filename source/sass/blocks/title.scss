@@ -4,4 +4,8 @@
   font-family: $regular-font;
   font-weight: 700;
   font-size: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+  }
 }

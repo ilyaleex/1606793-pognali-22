@@ -5,16 +5,41 @@
   border-radius: 0 0 30px 30px;
   margin-top: -75px;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 
 .feedback__wrapper {
-  padding: 105px 25px 41px;
+  padding: 145px 25px 26px;
+  max-width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 154px 76px 60px;
+    max-width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1174px;
+    padding: 191px 133px 104px;
+  }
 }
 
 
 .feedback__title {
   text-align: center;
+  margin: 0 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 59px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 57px 0;
+  }
 }
 
 
@@ -25,6 +50,17 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
+  margin: 0 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 68px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 63px 0;
+  }
 }
 
 
@@ -49,7 +85,15 @@
 
 
 .feedback__form {
-  margin: 30px 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
 }
 
 
@@ -59,6 +103,33 @@
   height: 62px;
   width: 60px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 20px 20px 0;
+
+    &::after {
+      top: 34px;
+      right: 26px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
+    padding-left: 36px;
+  }
+}
+
+
+.feedback__log-in-button-full {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-right: 100%;
+    font-size: 24px;
+  }
 }
 
 
@@ -66,12 +137,19 @@
   box-sizing: border-box;
   font-family: $regular-font;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   width: 100%;
   height: 58px;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   border: 4px solid $white;
   padding: 27px 60px 27px 25px;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 36px 80px 36px 36px;
+  }
 
   &:focus {
     color: $white;
@@ -86,6 +164,10 @@
   font-family: $regular-font;
   font-weight: 700;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 
@@ -97,5 +179,10 @@
   line-height: 22px;
   text-align: center;
   letter-spacing: 0.01em;
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }

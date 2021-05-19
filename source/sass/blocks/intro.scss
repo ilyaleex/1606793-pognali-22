@@ -5,7 +5,19 @@
 
 
 .intro__wrapper {
-  padding: 21px 25px 39px;
+  padding: 0 25px 72px;
+  max-width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px 137px;
+    max-width: 688px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 60px 255px;
+    max-width: 1320px;
+  }
 }
 
 
@@ -16,4 +28,12 @@
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+  margin: 0 0 313px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+    max-width: 399px;
+    margin: 0 auto 86px;
+  }
 }

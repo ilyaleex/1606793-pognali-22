@@ -5,11 +5,29 @@
   border-radius: 0 0 30px 30px;
   margin-top: -75px;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 0 0 60px 60px;
+  }
 }
 
 
 .location__wrapper {
-  padding: 102px 25px 56px;
+  padding: 102px 25px 35px;
+  max-width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 116px 75px 84px;
+    max-width: 618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 116px 135px 84px;
+    max-width: 1022px;
+  }
 }
 
 
@@ -18,15 +36,38 @@
   font-family: $regular-font;
   font-weight: 700;
   font-size: 16px;
-  line-height: 22px;
   text-transform: uppercase;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+  }
 }
 
 
 .location__get-directions {
   border: 3px solid $blue--dark;
   border-radius: 10px;
+  height: 62px;
+  padding: 19px;
+
+
+  &::after {
+    right: 14px;
+    top: 21px;
+
+    @media (min-width: $tablet-width) {
+      right: 26px;
+      top: 32px;
+    }
+  }
 
   &:hover {
     color: $white;
@@ -39,5 +80,16 @@
 
   &:active {
     color: $get-directions-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 23px 32px 24px 34px;
+    height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
   }
 }

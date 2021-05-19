@@ -7,12 +7,41 @@
 
 .user-profile__wrapper {
   padding: 75px 25px 109px;
+
+  @media (min-width: $tablet-width) {
+    padding: 112px 75px 123px;
+  }
 }
 
+
+@media (min-width: $tablet-width) {
+  .user-profile__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
 
 .user-profile__user-level {
   width: 100px;
   height: 100px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 94px;
+    height: 94px;
+  }
+}
+
+
+.level__text--user {
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 48px;
+      left: 23px;
+    }
+  }
 }
 
 
@@ -20,11 +49,12 @@
   color: $basic_blue;
   background: $special_blue_light;
   font-family: $regular-font;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   width: 100%;
+  height: 40px;
   border-radius: 50px;
-  padding: 10px 40px;
+  padding: 0 40px;
   margin-bottom: 25px;
   text-transform: uppercase;
   cursor: pointer;
@@ -36,6 +66,16 @@
   &:active {
     background: $special_blue_light;
     color: $basic_blue--active;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    height: 60px;
+    letter-spacing: 0.09em;
+    color: $blue--brighter;
+    border-radius: 10px;
   }
 }
 
@@ -60,21 +100,44 @@
   border: 1px solid $border-color;
   box-sizing: border-box;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 
+.user-profile__user-photo {
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 2;
+  }
+}
+
 .user-profile__user-tags {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+  }
+}
+
+
+.user-profile__user-tags-heading-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 
 .user-profile__user-tags-heading {
   position: absolute;
   background: $basic_blue_light;
-  top: -25px;
-  left: 90px;
   padding: 0 17px;
   z-index: 1;
+  top: -10px;
 }
 
 

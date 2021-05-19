@@ -47,7 +47,8 @@
 
 .calendar__weekdays {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 33px);
+  justify-content: center;
   padding: 0;
   margin: 0;
   font-family: $regular-font;
@@ -70,10 +71,11 @@
 
 .calendar__days {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 33px);
   grid-template-rows: repeat(6, 32px);
   padding: 0;
   margin: 0 0 22px 0;
+  justify-content: center;
 
   li {
     justify-self: center;

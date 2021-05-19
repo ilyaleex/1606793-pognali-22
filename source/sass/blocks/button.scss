@@ -11,7 +11,15 @@
   background: $basic_yellow;
   border-radius: 10px;
   padding: 22px;
+  height: 62px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 20px;
+    font-size: 24px;
+    padding: 27px 39px 32px;
+    height: 80px;
+  }
 
   &::after {
     position: absolute;
@@ -22,6 +30,11 @@
     border-right: 6px solid transparent;
     border-bottom: 6px solid transparent;
     border-left: 10px solid $blue--brighter;
+
+    @media (min-width: $tablet-width) {
+      top: 34px;
+      right: 35px;
+    }
   }
 
   &:hover {

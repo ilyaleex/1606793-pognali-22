@@ -1,34 +1,57 @@
 
 .business-rates {
-  // display: none;
-  background: $white;
-  border-radius: 20px;
+  display: none;
   position: fixed;
-  top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
-  height: 455px;
   z-index: 999;
   margin: auto;
   width: 270px;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    box-shadow: 0 4px 22px rgba(29, 46, 91, 0.18);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+    box-shadow: 0 4px 22px rgba(29, 46, 91, 0.18);
+    border-radius: 30px;
+  }
 }
 
 
 .business-rates__wrapper {
-  padding: 34px 25px 0;
+  padding: 34px 26px 34px 25px;
+  background: $white;
+  border-radius: 20px 20px 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 92px 52px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 54px 60px 52px 60px;
+    border-radius: 30px 30px 0 0;
+  }
 }
 
 
 .business-rates__title {
   text-align: center;
   margin: 0 0 28px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 47px 0;
+  }
 }
 
 
 .business-rates__price-list {
   padding: 0;
-  margin: 0 0 34px 0;
+  margin: 0;
 }
 
 
@@ -40,11 +63,21 @@
   &:last-child {
     border-bottom: 1px solid $line-color-business;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 
 .business-rates__price-list-item-description {
   margin: 11px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    margin: 16px 0 14px 0;
+  }
 }
 
 
@@ -53,6 +86,14 @@
 
   &:last-child {
     margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
   }
 }
 
@@ -63,7 +104,10 @@
   font-family: $regular-font;
   font-weight: 300;
   font-size: 16px;
-  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+  }
 }
 
 
@@ -79,9 +123,20 @@
   cursor: pointer;
   width: 100%;
   border-radius: 0 0 20px 20px;
-  padding: 21px 0;
+  padding: 18px 0;
+  height: 59px;
 
   &:active {
     color: $basic_blue_light--active;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    padding: 41px 0;
+    height: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 0 0 30px 30px;
   }
 }

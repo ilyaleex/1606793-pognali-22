@@ -1,12 +1,20 @@
 
 .menu {
-  // display: none;
+  position: fixed;
+  display: none;
   background: $white;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 
 .menu__wrapper {
-  padding: 22px 24px 38px;
+  padding: 27px 25px 41px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 40px 92px;
+  }
 }
 
 

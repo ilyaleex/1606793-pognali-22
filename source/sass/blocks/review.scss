@@ -1,12 +1,32 @@
 
+.review {
+  padding: 28px 25px 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 23px 211px;
+  }
+}
+
+
 .review__blockquote {
   color: $white;
   font-family: $regular-font;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  margin: 0;
-  padding-left: 25px;
+  margin: 0 0 18px 0;
+  max-width: 151px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0 0 45px 0;
+    max-width: 264px;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 32px;
+  }
 }
 
 
@@ -17,5 +37,28 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  padding-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .mobile-br {
+    display: none;
+  }
+}
+
+.tablet-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
