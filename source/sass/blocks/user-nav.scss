@@ -6,6 +6,11 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+}
+
+
+.user-nav__item--desktop {
+  display: none;
 
   @media (min-width: $desktop-width) {
     display: block;

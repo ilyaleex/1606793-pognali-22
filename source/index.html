@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
   <title>Погнали</title>
 </head>
+
 <body class="page__body">
   <header class="page-header page-header--main">
     <div class="page-header__nav page-header__nav--scroll">
@@ -13,6 +15,27 @@
         <img src="img/pognali-logo-white-no-background.svg" alt="Погнали?">
       </a>
       <button class="menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="menu-main-nav-desktop">
+        <li class="menu-main-nav-desktop__item"><a href="#">о сервисе</a></li>
+        <li class="menu-main-nav-desktop__item"><a href="form.html">направления</a></li>
+        <li class="menu-main-nav-desktop__item"><a href="catalog.html">попутчики</a></li>
+      </ul>
+      <button class="menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="user-nav">
+        <li class="user-nav__item user-nav__item--desktop">
+          <a class="user-nav__item-link user-nav__item-link--phone" href="tel:8-800-555-86-28">
+            <img src="img/phone-icon.svg" alt="Телефон">
+          </a>
+        </li>
+        <li class="user-nav__item user-nav__item--desktop">
+          <a class="user-nav__item-link user-nav__item-link--mail" href="mailto:mail@htmlacademy.ru">
+            <img src="img/mail-icon.svg" alt="Почта">
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__item-link user-nav__item-link--authorization" href="#">Авторизация</a>
+        </li>
+      </ul>
     </div>
     <nav class="menu">
       <div class="menu__wrapper">
@@ -88,7 +111,7 @@
       <div class="intro__wrapper">
         <div class="promo">
           <h1 class="visually-hidden">Сервис для поиска попутчиков "Погнали"</h1>
-          <h1 class="intro__slogan">В путешествие с крутыми попутчиками!</h1>
+          <p class="intro__slogan">В путешествие с крутыми попутчиками!</p>
           <ul class="user-nav user-nav--shifted">
             <li class="user-nav__item user-nav__item--shifted">
               <a class="user-nav__item-link user-nav__item-link--phone" href="tel:8-800-555-86-28">
@@ -310,4 +333,5 @@
     </div>
   </footer>
 </body>
+
 </html>

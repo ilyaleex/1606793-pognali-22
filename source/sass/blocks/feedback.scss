@@ -14,9 +14,19 @@
 
 .feedback__wrapper {
   padding: 145px 25px 26px;
+  @media (min-width: $tablet-width) {
+    padding: 154px 76px 60px;
+  max-width: 270px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 154px 76px 60px;
+    max-width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1174px;
+    padding: 191px 133px 104px;
   }
 }
 

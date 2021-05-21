@@ -14,15 +14,21 @@
 
 .location__wrapper {
   padding: 102px 25px 35px;
+  @media (min-width: $tablet-width) {
+    padding: 116px 75px 84px;
+  max-width: 270px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 116px 75px 84px;
+    max-width: 618px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     padding: 116px 135px 84px;
+    max-width: 1022px;
   }
 }
 
@@ -37,6 +43,17 @@
 
   @media (min-width: $tablet-width) {
     font-size: 28px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: center;
+    justify-self: center;
+    margin: 0;
   }
 }
 

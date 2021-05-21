@@ -21,6 +21,18 @@
 
   @media (min-width: $desktop-width) {
     padding: 179px 244px 165px 130px;
+  padding: 104px 0 37px 25px;
+  max-width: 246px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 141px 40px 57px;
+    max-width: 688px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 179px 130px 165px;
+    max-width: 1180px;
   }
 }
 
